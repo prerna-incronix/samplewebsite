@@ -1,31 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './assets/styles.css';
-// import Lottie from 'lottie-react';
-// import animationData from './assets/Animation - 1707113666442.json';
+import './assets/styles.css'; 
+import img from'./assets/pngs/Explore2.png';         // Import your CSS file for styling
 
-function About(){
-    return(
-         <div className="about-us-section">
-            <div className="about-us-content">
-                <h2>ABOUT US</h2>
-                <p>Mercurii epitomizes excellence in design. The science of style and fashion are key elements in the development of every Mercurii eyewear frame. Our product team places the utmost emphasis on creating eyewear that is unique and stylish, while also providing maximum comfort for the consumer.
+const AboutUs = () => {
+  return (
+    <div className="mission-chashma-imgmsgs mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5" >
 
-                At 'Mercurii', it's easy to choose your style from a variety of fashionable shapes, such as edgy rectangles, retro circles, and charming cat-eye designs in vibrant colors. Mercurii eyewear utilizes new and cutting-edge materials for its optical frames. Lightweight metals, thermoplastics (TR90), and high-quality compressed acetate (HDCA) options are available.
+  <div class="mission-width-style">
+  <div class="mission-style-img" > 
+<img class="cashma-img-mission" loading="lazy"
+   srcset={img}
+       src="//chashma.com/cdn/shop/files/Group_24926_1500x.png?v=1706947997"
+       sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+       alt=""
+       width="100vw"
+       height="312"/>
+       {/* <div class="text-overlay">
+        <p> EXPLORE</p> */}
+  </div>
+    </div>
+    {/* </div> */}
+  
 
-                Mercurii sunglasses showcase enchanting designs, including classic aviators, trendy retro styles, and snug-fitting wraparounds. High-quality polarized lenses offer 100% UV protection and glare-free vision.</p>
-
-                <p>OUR VISION
-
-We believe that "it's all about you, your vibe, your tribe, your energy, and your style." You are unique, and you deserve the best eyewear; what you choose at 'Mercurii' becomes your signature style.</p>
-            </div>
-            {/* <div className="about-us-image">
-                {/* Replace the placeholder image with your actual image */}
-                {/* <img src={about} alt="About Us" style={{width:'650px', height:'450px'}}/> */}
-                {/* <Lottie animationData={animationData} style={{width:'650px', height:'450px', display:'flex'}} />
-            </div>  */}
-        </div>
-    );
+  <div class="mission-chashma-msg" >
+    
+    <p>Transforming eyewear into vibrant expressions of identity</p>
+    
+    <p>Uniting style with health and precision vision</p>
+    
+    <p>Fostering a community where Indians proudly embrace their roots.</p>
+    
+    <p>Providing all with bold and stylish confidence.</p>
+    
+  </div>
+</div>
+  );
 }
 
-export default About;
+export default AboutUs;
