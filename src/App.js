@@ -12,7 +12,6 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
-     
       
       { <Routes>
         <Route path='/About' element={<About />} />
