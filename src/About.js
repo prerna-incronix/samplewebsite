@@ -16,11 +16,10 @@ const AboutUs = () => {
        alt=""
        width="100vw"
        height="312"/>
-       {/* <div className="text-overlay">
-        <p> EXPLORE</p> */}
+
   </div>
     </div>
-    {/* </div> */}
+    <div className="gap"></div>
   
 
   <div className="mission-chashma-msg" >
