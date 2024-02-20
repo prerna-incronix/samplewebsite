@@ -99,84 +99,83 @@
   /* About */
 
   /* Global styles */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-}
 
 /* About Us Section styles */
-.about-us-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  background-color: #f4f4f4; /* Adjust background color as needed */
-}
-
-.about-us-content {
-  max-width: 600px;
-  background-color: whitesmoke; /* Increase the max-width for a larger text area */
-}
-
-.about-us-content h2 {
-  font-size: 2em;
-  font-family: 'Noto Serif', serif;
-}
-
-.about-us-content p {
-  font-size: 1.4em; /* Increase the font size for better readability */
-  line-height: 1.6; /* Adjust the line height for better spacing */
-  font-family: 'Lora', serif;
-}
-
-.about-us-image img {
-  width: 30%; /* Make the image responsive */
-  border-radius: 10px; /* Optional: Add border-radius to the image */
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  padding-left: 50%;
-}
-
-/* Example responsive styles */
-@media (max-width: 1200px) {
-  .about-us-section {
-    flex-direction: column; /* Stack image below content on smaller screens */
-    align-items: center;
-    padding: 30px;
+/* About Us Section styles */
+  .mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5{
+      margin-top:0px;
+      margin-bottom:144px;
   }
-
-  .about-us-content {
-    max-width: 100%;
-    margin-bottom: 30px;
+  .mission-style-img{
+        width: 33.528vw;
   }
-
-  /* .lottie-animation {
-    /* Style for the right div with Lottie animation */
-    /* width: 500px;
-    height: auto;
-    margin-right: 60px;
-  } */ 
-
-  .about-us-image img {
-    width: 100%;
-    height: auto; /* Make the image responsive */
-    border-radius: 10px;
+  .cashma-img-mission{
+    width:100%;
+    height:auto;
+        object-fit: cover;
   }
-}
-
-@media (max-width: 768px) {
-  .about-us-section {
-    padding: 20px;
+  .mission-chashma-msg{
+    display: flex;
+    justify-content: center;
+    font-family: Raleway sans-serif;
+    font-size: medium;
   }
-
-  .about-us-content {
+  .mission-chashma-msg p{
+    width: 25vw;
     text-align: center;
+    padding: 1.39vw 2.928vw;
+    border-right: 1px solid #0000008a;
+    letter-spacing: 0px;
+    color: #383838;
+    opacity: 1;
+    line-height: 24px;
+    font-size: large;
+  }
+  .mission-chashma-msg p:first-child{
+    border-left: unset;
+    font-size: large;
+  }
+  .mission-chashma-msg p:last-child{
+    border-right: unset;
+    font-size: large;
+  }
+  .mission-width-style{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mission-chashma-imgmsgs{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background: #f1f1f1;
+    padding: 3.367vw 0;
   }
 
-  .about-us-image img {
-    width: 70%; /* Adjust image width for smaller screens */
+@media(max-width:760px){
+  .mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5{
+      margin-top:0px;
+      margin-bottom:40px;
+  }
+
+  .mission-chashma-msg p {
+    width: 100%;
+    padding: 10px 0;
+    border: unset;
+    text-align: left;
+    border-top: 1px solid #0000002e;
+    line-height: 20px;
+    font-size: large;
+  }
+  .mission-chashma-msg{
+    flex-direction: column;
+  }
+  .mission-chashma-imgmsgs{
+    padding: 36px;
+    gap: 5px;
+  }
+  .mission-style-img {
+    width: 323px;
   }
 }
 
-  
