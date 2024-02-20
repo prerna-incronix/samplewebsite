@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './nav'; 
+import  Navbar from './nav';
+import About from './About';
 import HeroSection from './hero';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
+     
       {/* <Routes>
         <Route path='/aboutus' element={<About />} />
         <Route path='/contact' element={<Contact />} />
