@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './nav'; 
+import HeroSection from './hero';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <HeroSection />
       {/* <Routes>
         <Route path='/aboutus' element={<About />} />
         <Route path='/contact' element={<Contact />} />
