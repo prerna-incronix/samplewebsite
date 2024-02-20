@@ -4,6 +4,7 @@ import  Navbar from './nav';
 import About from './About';
 import HeroSection from './hero';
 import Footer from './Footer';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,13 +12,13 @@ function App() {
       <Navbar />
       <HeroSection />
      
-      {/* <Routes>
-        <Route path='/aboutus' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+      { <Routes>
+        <Route path='/About' element={<About />} />
+        {/* <Route path='/contact' element={<Contact />} />
         <Route path='/home' element={<HomePage />} />
         <Route path='/Catalogue' element={<Catlogue />} />
-        <Route path='/Product' element={<Products />} /> 
-      </Routes> */}
+        <Route path='/Product' element={<Products />} />  */}
+      </Routes> }
       
       <Footer />
     </div>

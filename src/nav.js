@@ -1,6 +1,7 @@
 import React from 'react';
 import './assets/styles.css';
 import logo from './assets/pngs/logo.png';
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
         <li><a href="#">Home</a></li>
         <li><a href="#">Eyewear</a></li>
         <li><a href="#">Sunglasses</a></li>
-        <li><a href="#">Explore</a></li>
+        <li><NavLink to='/About'>Explore</NavLink></li>
       </ul>
     </nav>
   );
