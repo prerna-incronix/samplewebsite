@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+//import Home from './home';
+import Navbar from './nav';
 
 function App() {
   return (
     <div>
       <Navbar />
+      
       {/* <Routes>
         <Route path='/aboutus' element={<About />} />
         <Route path='/contact' element={<Contact />} />
@@ -13,7 +16,7 @@ function App() {
         <Route path='/Product' element={<Products />} /> 
       </Routes> */}
       
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
