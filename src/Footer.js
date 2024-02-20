@@ -4,6 +4,7 @@ import GooglePlayBadge from './assets/pngs/google-play-badge.png';
 import PolishLogo from './assets/pngs/polish-logo.png'
 import { Link } from 'react-router-dom';
 function Footer() {
+    
   return (
     <>
       <footer id="footer">
