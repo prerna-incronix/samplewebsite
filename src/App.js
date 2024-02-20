@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import  Navbar from './nav';
 import About from './About';
+import HeroSection from './hero';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <HeroSection />
      
       { <Routes>
         <Route path='/About' element={<About />} />
