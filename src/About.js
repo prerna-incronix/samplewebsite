@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/styles.css'; 
-import img from'./assets/pngs/Explore2.png';         // Import your CSS file for styling
+import img from'./assets/pngs/Explore.png';         // Import your CSS file for styling
 
 const AboutUs = () => {
   return (
