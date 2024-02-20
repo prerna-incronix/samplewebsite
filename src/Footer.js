@@ -7,9 +7,9 @@ function Footer() {
   return (
     <>
       <footer id="footer">
-      <div className="polish-logo">
+      {/* <div className="polish-logo">
             <img src={PolishLogo} alt="Polish Logo" />
-          </div>
+          </div> */}
           
         <div className="container">
             {/* Polish logo */}
@@ -107,7 +107,12 @@ function Footer() {
           </div>
 
           </div>
-          <hr></hr>
+          <hr>
+          </hr>
+          <div className="copyright-text">
+  COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY INCRONIX
+</div>
+
         </div>
       </footer>
     </>

@@ -193,5 +193,77 @@ ul {
   .google-play-badge:hover {
     transform: scale(1.1); /* Zoom effect on hover */
   }
+  /* CSS for centering the copyright text */
+.copyright-text {
+  text-align: center;
+  margin-top: 20px; /* Adjust margin-top as needed */
+}
+
   
-  
+  /* Media query for screen width 375px */
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .polish-logo {
+    order: -1;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer-column h2 {
+    font-size: 16px;
+  }
+
+  .footer-column p {
+    font-size: 14px;
+  }
+
+  .google-play-badge img {
+    width: 150px;
+  }
+
+  .polish-logo img {
+    width: 100px;
+  }
+
+  /* Centering the "Follow Us" section */
+  .footer-column[title="Follow Us"] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+  }
+
+  .example-1 .icon-content {
+    margin: 0 5px;
+  }
+
+  /* Centering the "Contact Us" section */
+  .footer-column[title="Contact Us"] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
