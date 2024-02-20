@@ -6,9 +6,15 @@ import Category from "./category";
 const Home = () => {
     return (
     <div>
-        <HeroSection />
-        <Category />
-        <About />
+        <div className="hero-section">
+            <HeroSection />
+        </div>
+        <div className="category-section">
+            <Category />
+        </div>
+        <div className="explore-section">
+            <About />
+        </div>
     </div>
     );
 };
