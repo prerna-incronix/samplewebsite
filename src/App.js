@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import  Navbar from './nav';
+//import Home from './home';
+import Navbar from './nav';
 import About from './About';
+import Category from './category';
 import HeroSection from './hero';
+import Footer from './Footer';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -10,7 +13,8 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
-     
+      <Category />
+      
       { <Routes>
         <Route path='/About' element={<About />} />
         {/* <Route path='/contact' element={<Contact />} />
@@ -19,7 +23,7 @@ function App() {
         <Route path='/Product' element={<Products />} />  */}
       </Routes> }
       
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
