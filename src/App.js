@@ -19,10 +19,11 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
         <Route path='/home' element={<Home />} />
-        {/* <Route path='/contact' element={<Contact />} />
-        <Route path='/home' element={<HomePage />} />
-        <Route path='/Catalogue' element={<Catlogue />} />
-        <Route path='/Product' element={<Products />} />  */}
+        {/* <Route path='/eyewear' element={< E />} />
+        <Route path='/sunglass' element={<S />} /> */}
+        <Route path='/' element={<About />} />
+        {/* <Route path='/' element={< E />} />
+        <Route path='/' element={<S />} /> */}
       </Routes> }
       
       <Footer />
