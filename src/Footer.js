@@ -12,8 +12,7 @@ function Footer() {
           </div> */}
           
         <div className="container">
-            {/* Polish logo */}
-          
+          {/* Polish logo */}
           <div className="footer-content">
             <div className="footer-column" style={{ marginLeft: '50px' }}>
               <h2>Contact Us</h2>
