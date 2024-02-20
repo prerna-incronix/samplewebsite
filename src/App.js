@@ -5,6 +5,7 @@ import Navbar from './nav';
 import About from './About';
 import Footer from './Footer';
 import HeroSection from './hero';
+import Footer from './Footer';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -12,7 +13,6 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
-     
       
       { <Routes>
         <Route path='/About' element={<About />} />
