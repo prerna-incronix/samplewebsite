@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import  Navbar from './nav';
+//import Home from './home';
+import Navbar from './nav';
 import About from './About';
 import HeroSection from './hero';
 import Footer from './Footer';
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <HeroSection />
      
+      
       { <Routes>
         <Route path='/About' element={<About />} />
         {/* <Route path='/contact' element={<Contact />} />
