@@ -3,6 +3,7 @@ import './App.css';
 //import Home from './home';
 import Navbar from './nav';
 import About from './About';
+import Footer from './Footer';
 import HeroSection from './hero';
 import { Route, Routes } from 'react-router-dom';
 
@@ -21,7 +22,7 @@ function App() {
         <Route path='/Product' element={<Products />} />  */}
       </Routes> }
       
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
