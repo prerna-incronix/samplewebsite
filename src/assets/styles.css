@@ -56,4 +56,88 @@
     opacity: 1;
     transition-delay: 0.3s; /* Delay the transition */
   }
+
+  /* About */
+
+  /* Global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* About Us Section styles */
+.about-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4; /* Adjust background color as needed */
+}
+
+.about-us-content {
+  max-width: 600px;
+  background-color: whitesmoke; /* Increase the max-width for a larger text area */
+}
+
+.about-us-content h2 {
+  font-size: 2em;
+  font-family: 'Noto Serif', serif;
+}
+
+.about-us-content p {
+  font-size: 1.4em; /* Increase the font size for better readability */
+  line-height: 1.6; /* Adjust the line height for better spacing */
+  font-family: 'Lora', serif;
+}
+
+.about-us-image img {
+  width: 30%; /* Make the image responsive */
+  border-radius: 10px; /* Optional: Add border-radius to the image */
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  padding-left: 50%;
+}
+
+/* Example responsive styles */
+@media (max-width: 1200px) {
+  .about-us-section {
+    flex-direction: column; /* Stack image below content on smaller screens */
+    align-items: center;
+    padding: 30px;
+  }
+
+  .about-us-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* .lottie-animation {
+    /* Style for the right div with Lottie animation */
+    /* width: 500px;
+    height: auto;
+    margin-right: 60px;
+  } */ 
+
+  .about-us-image img {
+    width: 100%;
+    height: auto; /* Make the image responsive */
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 20px;
+  }
+
+  .about-us-content {
+    text-align: center;
+  }
+
+  .about-us-image img {
+    width: 70%; /* Adjust image width for smaller screens */
+  }
+}
+
   

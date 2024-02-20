@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './About.css';
+import './assets/styles.css';
 // import Lottie from 'lottie-react';
 // import animationData from './assets/Animation - 1707113666442.json';
 
@@ -14,6 +14,10 @@ function About(){
                 At 'Mercurii', it's easy to choose your style from a variety of fashionable shapes, such as edgy rectangles, retro circles, and charming cat-eye designs in vibrant colors. Mercurii eyewear utilizes new and cutting-edge materials for its optical frames. Lightweight metals, thermoplastics (TR90), and high-quality compressed acetate (HDCA) options are available.
 
                 Mercurii sunglasses showcase enchanting designs, including classic aviators, trendy retro styles, and snug-fitting wraparounds. High-quality polarized lenses offer 100% UV protection and glare-free vision.</p>
+
+                <p>OUR VISION
+
+We believe that "it's all about you, your vibe, your tribe, your energy, and your style." You are unique, and you deserve the best eyewear; what you choose at 'Mercurii' becomes your signature style.</p>
             </div>
             {/* <div className="about-us-image">
                 {/* Replace the placeholder image with your actual image */}
