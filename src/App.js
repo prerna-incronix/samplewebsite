@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import  Navbar from './nav';
-import About from './About';
+// import About from './About';
+// import CategoryCatalogue from './CategoryCatalogue';
+import SunglassCatalogue from './SunglassCatalogue';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <SunglassCatalogue />
      
       {/* <Routes>
         <Route path='/aboutus' element={<About />} />
