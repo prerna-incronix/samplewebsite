@@ -3,6 +3,7 @@ import './App.css';
 import  Navbar from './nav';
 import About from './About';
 import HeroSection from './hero';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path='/Product' element={<Products />} /> 
       </Routes> */}
       
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
