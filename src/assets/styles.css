@@ -167,6 +167,198 @@
 .product-list h2 {
   font-size: 24px;
   margin-bottom: 10px;
+
+  .navbar__links li a.active {
+    font-weight: bold;
+    color: #076142;
+  }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 5px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .navbar__logo {
+      display: none; /* Hide the logo on mobile */
+    }
+  
+    .navbar__links {
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 0;
+      background-color: #f0f0f0;
+    }
+  
+    .navbar__links li {
+      margin: 0;
+      font-weight: 700;
+    }
+  
+    .navbar__links a {
+      color: rgb(48, 48, 48);
+      text-decoration: none;
+      padding: 10px;
+    }
+  
+    .navbar__links a:hover {
+      background-color: #ff9100;
+      color: #333;
+    }
+  }
+
+  /* Hero Section */
+
+  .hero {
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .carousel .slide {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .hero__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.5rem;
+  }
+
+  
+  /* About */
+
+  /* Global styles */
+
+/* About Us Section styles */
+/* About Us Section styles */
+  .mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5{
+      margin-top:0px;
+      margin-bottom:144px;
+  }
+  .mission-style-img{
+        width: 33.528vw;
+  }
+  .cashma-img-mission{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    margin-bottom: -32px;
+  }
+  .mission-chashma-msg{
+    display: flex;
+    justify-content: center;
+    font-family: Raleway sans-serif;
+    font-size: 25px;
+  }
+  .mission-chashma-msg p{
+    width: 25vw;
+    text-align: center;
+    padding: 1.39vw 2.928vw;
+    border-right: 1px solid #0000008a;
+    letter-spacing: 0px;
+    color: #383838;
+    opacity: 1;
+    line-height: 24px;
+    font-size: 25px;
+  }
+  .mission-chashma-msg p:first-child{
+    border-left: unset;
+    font-size: 25px;
+  }
+  .mission-chashma-msg p:last-child{
+    border-right: unset;
+    font-size: 25px;
+  }
+  .mission-width-style{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 41px;
+  }
+  .mission-chashma-imgmsgs{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background: #f1f1f1;
+    padding: 3.367vw 0;
+  }
+
+@media(max-width:760px){
+  .mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5{
+      margin-top:0px;
+      margin-bottom:40px;
+  }
+
+  .mission-chashma-msg p {
+    width: 100%;
+    padding: 10px 0;
+    border: unset;
+    text-align: left;
+    border-top: 1px solid #0000002e;
+    line-height: 20px;
+    font-size: large;
+  }
+  .mission-chashma-msg{
+    flex-direction: column;
+  }
+  .mission-chashma-imgmsgs{
+    padding: 36px;
+    gap: 5px;
+  }
+  .mission-style-img {
+    width: 323px;
+  }
+}
+
+.special-our-section-desk{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.special-our_block_texstyle {
+  display: flex;
+  margin: 1.4rem;
+  justify-content: center;
+  font-size: 25px;
+  color: black;
+  
+}
+.special-our_block_text {
+  font-family: "Poppins-Medium";
+  font-size: clamp(calc(14 * .9px),calc(14 * (100vw / var(--viewportDesktop))),calc(14 * 1.1px));
+  line-height: clamp(calc(20 * .9px),calc(20 * (100vw / var(--viewportDesktop))),calc(20 * 1.1px));
+  color: #141414;
 }
 
 .card-info-container ul {
