@@ -14,8 +14,8 @@ function Footer() {
         <div className="container">
           {/* Polish logo */}
           <div className="footer-content">
-            <div className="footer-column" style={{ marginLeft: '50px' }}>
-              <h2>Contact Us</h2>
+            <div className="footer-column" >
+              <h2 >Contact Us</h2>
               <p>Email: example@example.com</p>
               <p>Phone: +123 456 789</p>
             </div>
@@ -50,7 +50,7 @@ function Footer() {
 
 
             </a>
-            <div className="tooltip">Spotify</div>
+            <div className="tooltip">Facebook</div>
           </li>
           {/* Repeat the same structure for other social media icons */}
         </ul>
@@ -108,8 +108,8 @@ function Footer() {
           </div>
           <hr>
           </hr>
-          <div className="copyright-text">
-  COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY INCRONIX
+          <div class="copyright-text">
+  COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY <a href="https://incronix.com/" class="highlight-link">INCRONIX</a>
 </div>
 
         </div>

@@ -198,9 +198,17 @@ ul {
   text-align: center;
   margin-top: 20px; /* Adjust margin-top as needed */
 }
+.highlight-link {
+  color: black; /* Set the font color to black */
+  font-size: medium; /* Reduce the font size */
+  font-weight: 600; /* Increase font thickness */
+  text-decoration: none; /* Remove underline */
+}
+
 
   
-  /* Media query for screen width 375px */
+ /* Media query for screen width 375px */
+/* Media query for screen width 375px */
 @media (max-width: 375px) {
   .container {
     flex-direction: column;
@@ -240,10 +248,15 @@ ul {
     width: 100px;
   }
 
+  /* Adjustments for sections stacking vertically */
+  .footer-column {
+    display: block;
+    text-align: center;
+  }
+
   /* Centering the "Follow Us" section */
   .footer-column[title="Follow Us"] {
-    display: flex;
-    justify-content: center;
+    display: block;
     margin-bottom: 20px;
   }
 
@@ -262,8 +275,21 @@ ul {
 
   /* Centering the "Contact Us" section */
   .footer-column[title="Contact Us"] {
-    display: flex;
-    justify-content: center;
+    display: block;
     margin-bottom: 20px;
   }
+
+  /* Adjustments for social media icons */
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+
+  .social-icons i {
+    margin-right: 5px;
+  }
 }
+
