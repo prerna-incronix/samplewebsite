@@ -8,7 +8,6 @@ import HeroSection from './hero';
 import Home from './home';
 import Footer from './Footer';
 import { Route, Routes } from 'react-router-dom';
-import  Navbar from './nav';
 // import About from './About';
 // import CategoryCatalogue from './CategoryCatalogue';
 import SunglassCatalogue from './SunglassCatalogue';
