@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Card from "./card";
 import sunglasses from "./assets/sunglasses.png";
 import eyewear from "./assets/eyewear.png";
-import "./assets/styles.css";
+import './assets/styles.css';
+import Card from './card';
 
 function Category() {
   return (
