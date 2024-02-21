@@ -1,6 +1,6 @@
 //SunglassProductList.js
 import React from 'react';
-import './assets/styles.css';
+import './assets/product.css';
 
 const SunglassProductList = ({ products }) => {
 

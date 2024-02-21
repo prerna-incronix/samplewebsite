@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import CategoryList from "./CategoryList";
 import ProductList from "./ProductList";
 import { categories, products } from './assets/data/data';
-import './assets/styles.css';
+import './assets/product.css';
 
 const CategoryCatalogue = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);

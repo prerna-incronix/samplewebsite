@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import SunglassCategoryList from "./SunglassCategoryList";
 import SunglassProductList from "./SunglassProductList";
 import { categories, products } from './assets/data/data';
-import './assets/styles.css';
+import './assets/product.css';
 
 const SunglassCatalogue = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
