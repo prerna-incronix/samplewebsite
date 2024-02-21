@@ -60,6 +60,11 @@
     transition-delay: 0.3s; /* Delay the transition */
   }
 
+  .navbar__links li a.active {
+    font-weight: bold;
+    color: #076142;
+  }
+
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -360,9 +365,6 @@
 .category-section {
   padding: 40px;
   background-color: #f8f9fa;
-  border-radius: 10px;
-  margin-top: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-title {
