@@ -1,25 +1,52 @@
-import React from 'react';
-import './assets/styles.css';
-import logo from './assets/pngs/polish-logo.png';
-import { Link, NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import logo from "./assets/pngs/polish-logo.png";
+import "./assets/styles.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Left section for company logo */}
       <div className="navbar__logo">
-        <img src={logo} alt="Company Logo" />
+        <NavLink to="/home">
+          <img src={logo} alt="Company Logo" />
+        </NavLink>
       </div>
 
       {/* Right section for links */}
       <ul className="navbar__links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Eyewear</a></li>
-        <li><a href="#">Sunglasses</a></li>
-        <li><NavLink to='/About'>Explore</NavLink></li>
+        <li>
+          <NavLink exact to="/home" activeClassName="active">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Eyewear" activeClassName="active">
+            Eyewear
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Sunglass" activeClassName="active">
+            Sunglasses
+          </NavLink>
+        </li>
+        <li>
+          {/* Use ScrollLink for smooth scrolling */}
+          <ScrollLink
+            to="explore-section"
+            spy={true}
+            smooth={true}
+            duration={500}
+            style={{ cursor: "pointer" }}
+            className="scroll-link"
+          >
+            Explore
+          </ScrollLink>
+        </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;

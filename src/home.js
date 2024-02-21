@@ -4,13 +4,19 @@ import About from "./About";
 import Category from "./category";
 
 const Home = () => {
-    return (
+  return (
     <div>
+      <div className="hero-section">
         <HeroSection />
-        <About />
+      </div>
+      <div className="category-section">
         <Category />
+      </div>
+      <div className="explore-section">
+        <About />
+      </div>
     </div>
-    );
+  );
 };
 
 export default Home;
