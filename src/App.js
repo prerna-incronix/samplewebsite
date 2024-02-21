@@ -9,7 +9,7 @@ import Home from './home';
 import Footer from './Footer';
 import { Route, Routes } from 'react-router-dom';
 // import About from './About';
-// import CategoryCatalogue from './CategoryCatalogue';
+import CategoryCatalogue from './CategoryCatalogue';
 import SunglassCatalogue from './SunglassCatalogue';
 
 function App() {
@@ -21,22 +21,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/home" element={<Home />} />
-          {/* <Route path='/eyewear' element={< E />} />
-        <Route path='/sunglass' element={<S />} /> */}
+          <Route path='/eyewear' element={< CategoryCatalogue />} />
+          <Route path='/sunglass' element={<SunglassCatalogue />} />
           <Route path="/" element={<About />} />
           {/* <Route path='/' element={< E />} />
         <Route path='/' element={<S />} /> */}
-      </Routes> }
-      <SunglassCatalogue />
-     
-      {/* <Routes>
-        <Route path='/aboutus' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/home' element={<HomePage />} />
-        <Route path='/Catalogue' element={<Catlogue />} />
-        <Route path='/Product' element={<Products />} /> 
-      </Routes> */}
-      
+      </Routes> 
+      }
       <Footer />
     </div>
   );

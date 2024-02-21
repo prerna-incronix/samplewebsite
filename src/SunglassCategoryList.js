@@ -1,6 +1,6 @@
 //SunglassCategoryList.js
 import React from "react";
-import './assets/styles.css';
+import './assets/product.css';
 
 const SunglassCategoryList = ({ categories, onSelect }) => {
 

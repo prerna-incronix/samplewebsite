@@ -1,6 +1,6 @@
 //CategoryList.js
 import React from "react";
-import './assets/styles.css';
+import './assets/product.css';
 
 const CategoryList = ({ categories, onSelect }) => {
 
