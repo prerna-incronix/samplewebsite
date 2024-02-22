@@ -39,28 +39,28 @@ function Footer() {
             <div className="footer-column">
               <h2>Follow Us</h2>
               <div className="social-icons">
-              <ul className="example-1">
-          <li className="icon-content">
-            <a
-              className="link"
-              data-social="telegram"
-              aria-label="Facebook"
-              href="https://www.facebook.com/"
-            >
-              <svg viewBox="0 0 100 100" version="1.1">
-    <path
-        fill="currentColor"
-        d="M98.5 50c0-27.6-22.4-50-50-50S-2.5 22.4-2.5 50c0 25.7 18.9 47.1 43.5 51v-36.1H25.8V50H41V38.8c0-12.8 6.7-20.1 20-20.1 5.7 0 11.2.9 11.2.9v12.3h-6.3c-6.2 0-8.2 3.8-8.2 7.7V50h13.9l-2.2 14.9h-11.7V101c24.6-3.9 43.5-25.3 43.5-51z"
-    ></path>
-</svg>
+                <ul className="example-1">
+                  <li className="icon-content">
+                    <a
+                      className="link"
+                      data-social="telegram"
+                      aria-label="Facebook"
+                      href="https://www.facebook.com/"
+                    >
+                      <svg viewBox="0 0 100 100" version="1.1">
+                        <path
+                          fill="currentColor"
+                          d="M98.5 50c0-27.6-22.4-50-50-50S-2.5 22.4-2.5 50c0 25.7 18.9 47.1 43.5 51v-36.1H25.8V50H41V38.8c0-12.8 6.7-20.1 20-20.1 5.7 0 11.2.9 11.2.9v12.3h-6.3c-6.2 0-8.2 3.8-8.2 7.7V50h13.9l-2.2 14.9h-11.7V101c24.6-3.9 43.5-25.3 43.5-51z"
+                        ></path>
+                      </svg>
 
 
 
-            </a>
-            <div className="tooltip">Facebook</div>
-          </li>
-          {/* Repeat the same structure for other social media icons */}
-        </ul>
+                    </a>
+                    <div className="tooltip">Facebook</div>
+                  </li>
+                  {/* Repeat the same structure for other social media icons */}
+                </ul>
 
                 <ul className="example-1">
                   <li className="icon-content">
@@ -114,8 +114,8 @@ function Footer() {
           <hr>
           </hr>
           <div class="copyright-text">
-  COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY <a href="https://incronix.com/" class="highlight-link">INCRONIX</a>
-</div>
+            COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY <a href="https://incronix.com/" class="highlight-link">INCRONIX</a>
+          </div>
 
         </div>
       </footer>
