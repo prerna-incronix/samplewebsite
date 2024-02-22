@@ -1,14 +1,15 @@
 /* CategoryCatelogue.js */
 
 .catalogue-header{
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
 }
   
 .catalogue-container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
+  width: fit-content;
+  margin: 20px 0;
+  padding: 0 10px;
+  justify-content: center;
   /* display: flex;
   flex-direction: row; */
 }
@@ -16,6 +17,7 @@
 .catalogue-row {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   /* flex-direction: row;
   margin-bottom: 10px; */
 }
@@ -78,6 +80,7 @@
 }
   
 .category-button {
+  position: relative;
   border: none;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
@@ -86,11 +89,22 @@
   color: #333; /* Set button text color */
   padding: 5px 10px; /* Add padding to the button */
   margin: 0; /* Remove margin */
-  transition: color 0.3s, text-decoration 0.3s; /* Add transition for color and text-decoration */
+  transition: color 0.3s; /* Add transition for color */
 }
 
-.category-button:hover {
-  text-decoration: underline; /* Underline text on hover */
+.category-button::before {
+  content: '';
+  position: absolute;
+  width: 0; /* Start with no underline */
+  height: 3px; /* Set the thickness of the underline */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 153, 0); /* Set the color of the underline */
+  transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+}
+
+.category-button:hover::before {
+  width: 100%; /* Fully underline on hover */
 }
 
 .category-button:active,
@@ -106,20 +120,12 @@
   transform: translateY(1px); /* Move the button down slightly when clicked */
 }
 
-.category-button:not(.all) {
-  color: #333;
-}
-
-
-
 
   
 /* ProductList.js */
   
 .product-list {
   padding: 10px;
-  margin-top: 0px;
-  margin-left: -80px;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid #ccc; /* Add border */
@@ -175,23 +181,26 @@
   
 .product-item img {
   /* max-width: 100%; */
-  height: 150px;
-  width: 150px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   border-radius: 5px;
-  object-fit: cover;
+  object-fit: contain;
 }
   
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
-  padding: 5px 0;
-  font-size: 14px;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -203,6 +212,6 @@
 .product-item p {
   margin-top: 10px;
   font-weight: bold;
-  font-family: 'Times New Roman', sans-serif; /* Set the font family */
-  font-size: 16px; /* Set the font size */
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
 }

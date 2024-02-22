@@ -35,139 +35,154 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="special-our_content special-our_content-template--21826586313000__a74be53d-8cc9-4de9-a441-072ee071739e">
-        <div className="special-our-heading_style">
-          <h2 className="special-our-about-page">Our Specials</h2>
-          <p>
-            Our commitment to your vision and satisfaction remains unwavering,
-            no matter how you connect with us.
-          </p>
-        </div>
 
-        <div className="special-our-image_style">
-          <div className="special-our_img_text">
-            <div className="special-ourblock_img">
-              <img
-                className="special-our-section-desk"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24374_2x_c23c3d78-39b4-40bc-9e45-523b02e24004_165x.png?v=1706783468 165w,//chashma.com/cdn/shop/files/Mask_Group_24374_2x_c23c3d78-39b4-40bc-9e45-523b02e24004.png?v=1706783468 280w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24374_2x_c23c3d78-39b4-40bc-9e45-523b02e24004_1500x.png?v=1706783468"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="280"
-              />
+      {/* What we do section */}
 
-              <img
-                className="special-our-section-mob"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24374.png?v=1706783468 140w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24374_1500x.png?v=1706783468"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="140"
-              />
-            </div>
+      <div class="offer_content offer_content-template--21826586313000__470c9260-c7d7-471d-b340-3bf9449880e6">
+  <div class="different-heading_style">      
+    <h2 class="different-about-page">
+        What Makes Us Different
+    </h2>
+  </div>
 
-            <div className="special-our_block_texstyle">
-              <p className="special-our_block_text">Customization</p>
-            </div>
-          </div>
+<div class="different-image_style">
+  
 
-          <div className="special-our_img_text">
-            <div className="special-ourblock_img">
-              <img
-                className="special-our-section-desk"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24372_2x_4f083129-f4fc-49fa-b63a-281629813af5_165x.png?v=1706783456 165w,//chashma.com/cdn/shop/files/Mask_Group_24372_2x_4f083129-f4fc-49fa-b63a-281629813af5.png?v=1706783456 280w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24372_2x_4f083129-f4fc-49fa-b63a-281629813af5_1500x.png?v=1706783456"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="280"
-              />
+  <div class="offers_img_text">
+    <div class="offers_block_img">
+      
+    <img class="offer-section-desk" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/Group_23164_2x_f93cdc6c-3349-4846-b5f4-06c34c7170ab_165x.png?v=1706783038 165w,//chashma.com/cdn/shop/files/Group_23164_2x_f93cdc6c-3349-4846-b5f4-06c34c7170ab.png?v=1706783038 314w"
+           src="//chashma.com/cdn/shop/files/Group_23164_2x_f93cdc6c-3349-4846-b5f4-06c34c7170ab_1500x.png?v=1706783038"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="314"/>
+      
 
-              <img
-                className="special-our-section-mob"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24372.png?v=1706783456 140w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24372_1500x.png?v=1706783456"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="140"
-              />
-            </div>
+      <img class="offer-section-mob" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/diff1.png?v=1706782972 157w"
+           src="//chashma.com/cdn/shop/files/diff1_1500x.png?v=1706782972"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="157"/>
+  
+    </div>
 
-            <div className="special-our_block_texstyle">
-              <p className="special-our_block_text">Home Try On</p>
-            </div>
-          </div>
+    
+    <div class="offer_block_texstyle">
+    <p class="offers_block_text">Biggest portfolio of lenses and frames.</p>
+    <p class="offers_block_text"></p>
+    </div>
+    
+  </div>
+  
 
-          <div className="special-our_img_text">
-            <div className="special-ourblock_img">
-              <img
-                className="special-our-section-desk"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24373_2x_013a9277-58bf-4f1e-907b-b0f4fd2d6722_165x.png?v=1706783463 165w,//chashma.com/cdn/shop/files/Mask_Group_24373_2x_013a9277-58bf-4f1e-907b-b0f4fd2d6722.png?v=1706783463 280w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24373_2x_013a9277-58bf-4f1e-907b-b0f4fd2d6722_1500x.png?v=1706783463"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="280"
-              />
+  <div class="offers_img_text">
+    <div class="offers_block_img">
+      
+    <img class="offer-section-desk" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/Group_23168_2x_d18872d8-4176-4b89-96e2-d529f30ecf08_165x.png?v=1706783026 165w,//chashma.com/cdn/shop/files/Group_23168_2x_d18872d8-4176-4b89-96e2-d529f30ecf08.png?v=1706783026 303w"
+           src="//chashma.com/cdn/shop/files/Group_23168_2x_d18872d8-4176-4b89-96e2-d529f30ecf08_1500x.png?v=1706783026"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="303"/>
+      
 
-              <img
-                className="special-our-section-mob"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24373.png?v=1706783462 140w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24373_1500x.png?v=1706783462"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="140"
-              />
-            </div>
+      <img class="offer-section-mob" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/diff2.png?v=1706782985 152w"
+           src="//chashma.com/cdn/shop/files/diff2_1500x.png?v=1706782985"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="152"/>
+  
+    </div>
 
-            <div className="special-our_block_texstyle">
-              <p className="special-our_block_text">Wide Range</p>
-            </div>
-          </div>
+    
+    <div class="offer_block_texstyle">
+    <p class="offers_block_text">The fastest checkout & delivery.</p>
+    <p class="offers_block_text"></p>
+    </div>
+    
+  </div>
+  
 
-          <div className="special-our_img_text">
-            <div className="special-ourblock_img">
-              <img
-                className="special-our-section-desk"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24375_2x_9b22866e-8e07-43b9-8a43-e005c81432ea_165x.png?v=1706783475 165w,//chashma.com/cdn/shop/files/Mask_Group_24375_2x_9b22866e-8e07-43b9-8a43-e005c81432ea.png?v=1706783475 280w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24375_2x_9b22866e-8e07-43b9-8a43-e005c81432ea_1500x.png?v=1706783475"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="280"
-              />
+  <div class="offers_img_text">
+    <div class="offers_block_img">
+      
+    <img class="offer-section-desk" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/Group_23169_2x_73cfb62e-ce79-4039-8169-b91f810fde29_165x.png?v=1706783020 165w,//chashma.com/cdn/shop/files/Group_23169_2x_73cfb62e-ce79-4039-8169-b91f810fde29.png?v=1706783020 300w"
+           src="//chashma.com/cdn/shop/files/Group_23169_2x_73cfb62e-ce79-4039-8169-b91f810fde29_1500x.png?v=1706783020"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="300"/>
+      
 
-              <img
-                className="special-our-section-mob"
-                loading="lazy"
-                srcset="//chashma.com/cdn/shop/files/Mask_Group_24375.png?v=1706783475 140w"
-                src="//chashma.com/cdn/shop/files/Mask_Group_24375_1500x.png?v=1706783475"
-                sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt=""
-                width="100vw"
-                height="140"
-              />
-            </div>
+      <img class="offer-section-mob" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/diff3.png?v=1706782991 150w"
+           src="//chashma.com/cdn/shop/files/diff3_1500x.png?v=1706782991"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="150"/>
+  
+    </div>
 
-            <div className="special-our_block_texstyle">
-              <p className="special-our_block_text">Best Lenses</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    
+    <div class="offer_block_texstyle">
+    <p class="offers_block_text">Zero manufacturing defects.</p>
+    <p class="offers_block_text"></p>
+    </div>
+    
+  </div>
+  
+
+  <div class="offers_img_text">
+    <div class="offers_block_img">
+      
+    <img class="offer-section-desk" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/Group_23167_2x_b2536410-7155-4823-99ed-d6534013f780_165x.png?v=1706783032 165w,//chashma.com/cdn/shop/files/Group_23167_2x_b2536410-7155-4823-99ed-d6534013f780.png?v=1706783032 334w"
+           src="//chashma.com/cdn/shop/files/Group_23167_2x_b2536410-7155-4823-99ed-d6534013f780_1500x.png?v=1706783032"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="334"/>
+      
+
+      <img class="offer-section-mob" loading="lazy"
+      srcset="//chashma.com/cdn/shop/files/diff4_165x.png?v=1706782979 165w,//chashma.com/cdn/shop/files/diff4.png?v=1706782979 167w"
+           src="//chashma.com/cdn/shop/files/diff4_1500x.png?v=1706782979"
+           sizes="(min-width: 1920px) 910px, (min-width:750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+           alt=""
+           width="100vw"
+           height="167"/>
+  
+    </div>
+
+    
+    <div class="offer_block_texstyle">
+    <p class="offers_block_text">The best deals</p>
+    <p class="offers_block_text">in the market.</p>
+    </div>
+    
+  </div>
+  
+</div>
+</div>
+
+      </>
+
   );
-};
+}
+
+      
+
+      
+            
+
 
 export default AboutUs;
