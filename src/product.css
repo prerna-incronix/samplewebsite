@@ -204,117 +204,30 @@
   font-size: medium;
 }
 
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375px),
+       (min-width: 376px) and (max-width: 425px),
+       (min-width: 426px) and (max-width: 768px),
+       (min-width: 769px) and (max-width: 1024px) {
   /* CategoryCatalogue.js */
-
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
+  .catalogue-container {
+    display: flex;
+    justify-content: center; /* Center category section horizontally */
+    /* margin-bottom: 10px; Add margin-bottom to separate columns */
   }
 
-
+  .catalogue-col-1,
   .catalogue-col-2 {
     padding: 0 10px; /* Adjust padding */
+    
   }
 
-
   /* ProductList.js */
-
-
   .product-list {
     margin: 250px -10px 0 -100px; /* Adjust margin */
   }
 
-
   .product-item {
     padding-right: 0; /* Reset padding-right */
   }
 }
 
-
-@media (min-width: 376px) and (max-width: 425px) {
-  /* CategoryCatalogue.js */
-
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
-
-
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-
-  /* ProductList.js */
-
-
-  .product-list {
-    margin: 250px -10px 0 -100px; /* Adjust margin */
-  }
-
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}
-
-
-@media (min-width: 426px) and (max-width: 768px) {
-  /* CategoryCatalogue.js */
-
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
-
-
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-
-  /* ProductList.js */
-
-
-  .product-list {
-    margin: 250px -10px 0 -190px; /* Adjust margin */
-  }
-
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* CategoryCatalogue.js */
-
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
-
-
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-
-  /* ProductList.js */
-
-
-  .product-list {
-    margin: 250px -10px 0 -250px; /* Adjust margin */
-  }
-
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}
