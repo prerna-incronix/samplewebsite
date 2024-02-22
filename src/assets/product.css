@@ -125,6 +125,10 @@ category-button.all:hover::before {
    /* Reset transform */
 }
 
+.category-button.all:not(.active) {
+  color: grey; /* Change color to grey when not active */
+}
+
 
 
 /* ProductList.js */
