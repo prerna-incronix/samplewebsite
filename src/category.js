@@ -11,7 +11,7 @@ function Category() {
         <h2>CATEGORIES</h2>
       </div>
       <section className="category-tiles">
-        <Link to="/Product" className="category-link">
+        <Link to="/CategoryCatalogue" className="category-link">
           <div className="category-tile">
             <img src={eyewear} alt="Eyewear" className="category-tile-img" />
             <div className="category-tile-overlay">
@@ -19,7 +19,7 @@ function Category() {
             </div>
           </div>
         </Link>
-        <Link to="/sunglasses" className="category-link">
+        <Link to="/SunglassCatalogue" className="category-link">
           <div className="category-tile">
             <img
               src={sunglasses}
@@ -35,6 +35,5 @@ function Category() {
     </div>
   );
 }
-
 
 export default Category;
