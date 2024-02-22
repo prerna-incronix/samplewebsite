@@ -1,11 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "./assets/jpgs/Animations2.mp4";
 import "./assets/styles.css";
-import './CategoryCatalogue';
-import './';
-import './Fonts/Logo/Zebulon Bold.otf'
 
 const Navbar = () => {
   document.addEventListener("DOMContentLoaded", function() {
@@ -13,6 +10,9 @@ const Navbar = () => {
     document.getElementById("polishText").classList.add("fillInAnimation");
   });
   
+  const location = useLocation();
+  const isHomePage = location.pathname === "/home";
+
   return (
     <nav className="navbar">
       {/* Left section for company logo */}
@@ -46,17 +46,23 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          {/* Use ScrollLink for smooth scrolling */}
-          <ScrollLink
-            to="explore-section"
-            spy={true}
-            smooth={true}
-            duration={500}
-            style={{ cursor: "pointer" }}
-            className="scroll-link"
-          >
-            Explore
-          </ScrollLink>
+          {/* Conditionally render ScrollLink based on whether it's the home page */}
+          {isHomePage ? (
+            <ScrollLink
+              to="explore-section"
+              spy={true}
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+              className="scroll-link"
+            >
+              Explore
+            </ScrollLink>
+          ) : (
+            <NavLink to="/About">
+              Explore
+            </NavLink>
+          )}
         </li>
       </ul>
     </nav>
