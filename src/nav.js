@@ -1,19 +1,32 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "./assets/pngs/polish-logo.png";
+import logo from "./assets/jpgs/Animations2.mp4";
 import "./assets/styles.css";
 import './CategoryCatalogue';
+import './';
+import './Fonts/Logo/Zebulon Bold.otf'
 
 const Navbar = () => {
+  document.addEventListener("DOMContentLoaded", function() {
+    // Trigger animation when the page is loaded
+    document.getElementById("polishText").classList.add("fillInAnimation");
+  });
+  
   return (
     <nav className="navbar">
       {/* Left section for company logo */}
       <div className="navbar__logo">
         <NavLink to="/home">
-          <img src={logo} alt="Company Logo" />
+          <ul>
+            <li><span id="polishText">POLISH</span></li>
+            <li><span id="eyewearText">EyeWear</span></li>
+          </ul>
         </NavLink>
       </div>
+
+      {/* <div className='Mundo sans'>Mundo</div>
+      <div className='Zebulon'>Zebulon</div> */}
 
       {/* Right section for links */}
       <ul className="navbar__links">

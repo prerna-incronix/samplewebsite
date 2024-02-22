@@ -30,6 +30,7 @@ function App() {
           <Route path="/" element={<About />} />
           {/* <Route path='/' element={< E />} />
         <Route path='/' element={<S />} /> */}
+        
       </Routes> 
       }
       <Footer />
