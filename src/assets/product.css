@@ -178,9 +178,10 @@
 .product-item img {
   /* max-width: 100%; */
   height: 150px;
-  width: 150px;
+  width: auto;
+  aspect-ratio: 1 / 1;
   border-radius: 5px;
-  object-fit: cover;
+  object-fit: contain;
 }
   
 .overlay {
