@@ -190,7 +190,7 @@
 
 /* About Us Section styles */
 /* About Us Section styles */
-.mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5 {
+/* .mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5 {
   margin-top: 0px;
   margin-bottom: 144px;
 }
@@ -429,7 +429,113 @@
   }
 }
 
+ */
 
+/* Navbar */
+
+
+@font-face {
+  font-family: "Zebulon";
+  src: local("Logo"),
+   url("../Fonts/Logo/Zebulon\ Bold.otf") format("truetype");
+  font-weight: bold;
+ }
+ @font-face {
+  font-family: "Mundo";
+  src: local("Logo"),
+   url("../Fonts/Logo/Mundo\ Sans\ Std\ Medium\ Italic.otf") format("truetype");
+ }
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(48, 48, 48);
+  padding-left: 48px;
+  padding-right: 48px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar__logo {
+  color: transparent; /* Initial color set to transparent */
+  background-image: linear-gradient(to right, indigo,red); /* Gradient background */
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Hide the text color */
+  animation: fillIn 4s forwards; 
+  text-align: center;
+}
+
+.navbar__logo span {
+  letter-spacing: 5px; /* Adjust the letter spacing as needed */
+}
+
+#polishText {
+  font-family: 'Zebulon', sans-serif;
+  font-size: 36px;
+}
+
+#eyewearText {
+  font-family: 'Mundo', sans-serif;
+  font-size: 15px;
+}
+
+@keyframes fillIn {
+  from {
+    background-size: 0% 100%; /* Start with 0% background */
+  }
+  to {
+    background-size: 100% 100%; /* End with 100% background */
+  }
+}
+
+.navbar__links {
+  list-style-type: none;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+}
+
+.navbar__links li {
+  margin-right: 24px;
+  /* Adjust spacing between links */
+}
+
+.navbar__links li:last-child {
+  margin-right: 0;
+}
+
+.navbar__links a {
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar__links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: rgb(255, 153, 0);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.navbar__links a:hover::after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  transition-delay: 0.3s;
+  /* Delay the transition */
+}
 
 /* CategoryCatelogue.js */
 
@@ -1144,5 +1250,18 @@ category-section {
   .card-img-container img {
 
     padding: 30px;
+  }
+
+   
+  .Mudo{
+    font-family: Mundo;
+  }
+
+  .Zebulon{
+    font-family: Zebulon;
+  }
+  .Mundo sans{
+    font-family: Mundo sans;
+
   }
 }

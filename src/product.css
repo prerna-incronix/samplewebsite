@@ -151,7 +151,8 @@
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  flex: 0 0 calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
+  display: flex;
+  /* flex: 0 0 calc(33.33% - 20px); 33.33% width with 20px margin on both sides */
   margin: 0 10px 20px; /* Margin around each product item */
 }
   
@@ -160,7 +161,7 @@
 }
   
 .product-item {
-  width: calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
+  width: 100%;
   margin: 0 10px 20px; /* Margin around each product item */
   box-sizing: border-box;
   padding: 10px;
