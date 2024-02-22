@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './assets/styles.css'; // Import CSS file for styling
+import './assets/styles.css';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import 'firebase/storage';
@@ -9,6 +9,7 @@ import firebaseConfig from './firebaseConfig';
 
 const HeroSection = () => {
   const [postersData, setPostersData] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     // Initialize Firebase
@@ -33,22 +34,37 @@ const HeroSection = () => {
     fetchPosters();
   }, []);
 
+  const handleSlideChange = (index) => {
+    setCurrentSlide(index);
+  };
+
   return (
     <div className="hero">
       {/* Carousel for background images */}
-      <Carousel autoPlay infiniteLoop showArrows={false} showThumbs={false} showStatus={true}>
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showArrows
+        showThumbs={false}
+        showStatus={false}
+        stopOnHover={true}
+        swipeable={true}
+        onChange={handleSlideChange}
+        selectedItem={currentSlide}
+      >
         {postersData.map((poster, index) => (
           <div key={index}>
-            <img key={index} src={poster} alt={`Background${index + 1}`} />
+            <img src={poster} alt={`Background${index + 1}`} />
           </div>
         ))}
       </Carousel>
-
-      {/* Foreground content 
-      <div className="hero__content">
-        <h1 className="hero__title">Your Title Here</h1>
-        <p className="hero__subtitle">Your Subtitle Here</p>
-      </div> */}
+      {/* Styling for the overlay */}
+      <div className="overlay"></div>
+      {/* Styling for the arrow controls */}
+      <div className="arrow-controls">
+        <button className="control-arrow control-prev" onClick={() => setCurrentSlide(currentSlide - 1)} />
+        <button className="control-arrow control-next" onClick={() => setCurrentSlide(currentSlide + 1)} />
+      </div>
     </div>
   );
 };
