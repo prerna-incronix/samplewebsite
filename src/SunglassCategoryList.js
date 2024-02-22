@@ -8,7 +8,7 @@ const SunglassCategoryList = ({ categories, onSelect }) => {
             <h2>Category</h2>
             <ul>
                 <li key="all">
-                    <button className='category-button' onClick={() => onSelect(null)}>
+                    <button className='category-button all' onClick={() => onSelect(null)}>
                         <p>All</p>
                     </button>
                 </li>

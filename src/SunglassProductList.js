@@ -50,8 +50,8 @@ const SunglassProductList = ({ selectedCategory }) => {
                 {productsList.map((product, index) => (
                     <li key={ index } className='product-item'>
                         <img src={product.imageUrls} alt={product.name} onClick={() => openModal(product.imageUrls)} />
-                        <div className="overlay">{product.modelno}</div>
-                        <p>{product.name}</p>
+                        <div className="overlay"><p>{product.name}</p></div>
+                        {/* {product.modelno} */}
                     </li>
                 ))}
             </ul>
