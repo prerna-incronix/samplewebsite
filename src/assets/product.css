@@ -45,16 +45,13 @@
   margin-right: 30px !important;
   margin-top: 0px;
   padding: 50px; 
-  background-color: white;
   position: absolute;
-  width: 250px;
+  width: 180px;
   height: 250px;
-  color: #333;
-  width: min-content;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid #ccc; /* Add border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Include border-color in transition */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
   
 .category-card:hover {
@@ -79,23 +76,45 @@
   font-size: 22px; /* Set the font size */
   font-weight: 400; /* Set the font weight */
   line-height: 1.5; /* Set the line height */
-  color: #333; /* Set the text color */
   text-align: left;
 }
   
-.category-button{
+.category-button {
   border: none;
   cursor: pointer;
-  font-size: 18px;
-  background-color: white; /* Button background color */
-  color: #333; /* Button text color */
-  width: max-content;
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  background-color: transparent; /* Set button background color to transparent */
+  color: #333; /* Set button text color */
+  padding: 5px 10px; /* Add padding to the button */
+  margin: 0; /* Remove margin */
+  transition: color 0.3s, text-decoration 0.3s; /* Add transition for color and text-decoration */
 }
-  
-.category-card button:hover {
-  color: rgb(255, 153, 0);
-  text-decoration: underline;
+
+.category-button:hover {
+  text-decoration: underline; /* Underline text on hover */
 }
+
+.category-button:active,
+.category-button:focus {
+  font-weight: bold;
+  color: #076142;
+  transform: translateY(1px); /* Move the button down slightly when clicked */
+}
+
+.category-button.all {
+  font-weight: bold;
+  color: #076142;
+  transform: translateY(1px); /* Move the button down slightly when clicked */
+}
+
+.category-button:not(.all) {
+  color: #333;
+}
+
+
+
+
   
 /* ProductList.js */
   
@@ -132,8 +151,8 @@
 }
   
 .product-list li {
-  /* background-color: #f9f9f9;
-  border: 1px solid #ddd; */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
@@ -141,9 +160,9 @@
   margin: 0 10px 20px; /* Margin around each product item */
 }
   
-/* .product-item li:hover {
+.product-item li:hover {
   background-color: #e9e9e9;
-} */
+}
   
 .product-item {
   width: calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
