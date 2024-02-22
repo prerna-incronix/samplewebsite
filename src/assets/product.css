@@ -120,6 +120,10 @@
   transform: translateY(1px); /* Move the button down slightly when clicked */
 }
 
+.category-button.all:not(.active) {
+  color: grey; /* Change color to grey when not active */
+}
+
 
   
 /* ProductList.js */
