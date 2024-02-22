@@ -198,12 +198,12 @@ ul {
 .copyright-text {
 text-align: center;
 margin-top: 20px; /* Adjust margin-top as needed */
-color: #bdbdbd;
+color: #5c5c5c;
 }
 .highlight-link {
-color: rgb(160, 160, 160); /* Set the font color to black */
-font-size: medium; /* Reduce the font size */
-font-weight: 600; /* Increase font thickness */
+color: rgb(17, 17, 17); /* Set the font color to black */
+font-size: 20px; /* Reduce the font size */
+font-weight: 700; /* Increase font thickness */
 text-decoration: none; /* Remove underline */
 }
 

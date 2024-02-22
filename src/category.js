@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import sunglasses from "./assets/sunglasses.png";
 import eyewear from "./assets/eyewear.png";
 import './assets/styles.css';
-import Card from './card';
 
 function Category() {
   return (
@@ -11,23 +10,23 @@ function Category() {
       <div className="category-title">
         <h2>CATEGORIES</h2>
       </div>
-      <section className="category-card-section">
+      <section className="category-tiles">
         <Link to="/Product" className="category-link">
-          <div className="category-card">
-            <img src={eyewear} alt="Eyewear" className="category-card-img" />
-            <div className="category-card-overlay">
+          <div className="category-tile">
+            <img src={eyewear} alt="Eyewear" className="category-tile-img" />
+            <div className="category-tile-overlay">
               <h3>Eyewear</h3>
             </div>
           </div>
         </Link>
         <Link to="/sunglasses" className="category-link">
-          <div className="category-card">
+          <div className="category-tile">
             <img
               src={sunglasses}
               alt="Sunglasses"
-              className="category-card-img"
+              className="category-tile-img"
             />
-            <div className="category-card-overlay">
+            <div className="category-tile-overlay">
               <h3>Sunglasses</h3>
             </div>
           </div>
