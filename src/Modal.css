@@ -1,31 +1,146 @@
 /* modal.css */
+
+/* Ensure modal overlay is properly centered */
+/* modal.css */
+
+/* Ensure modal overlay is properly centered */
 .modal-overlay {
     position: fixed;
-    top: 0;
+    top: 50%; /* Center vertically */
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Maintain full height */
+    transform: translateY(-50%); /* Center vertically */
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     z-index: 1;
-    padding-top: 80px;
 }
 
+/* Ensure modal content is properly centered */
 .modal-content {
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 80%;
+    max-width: 600px; /* Max width for larger screens */
+    height: 80vh; /* Reduce height of modal content */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+    top: calc(10% + 20px); /* Shift container 20px downwards */
 }
 
+/* Adjust image size */
 .modal-content img {
-    width: 100%;
-    max-width: 80vw; /* Limit image width to 80% of the viewport width */
-    max-height: 80vh; /* Limit image height to 80% of the viewport height */
+    max-width: 100%; /* Limit image width to prevent overflow */
+    max-height: 80%; /* Limit image height to prevent overflow */
+    display: block;
+    border-radius: 8px;
     object-fit: contain;
 }
+
+/* Beautify model number */
+.model-no-container {
+    display: flex; /* Display label and model number side by side */
+    align-items: center; /* Align items vertically */
+    position: absolute; /* Position model number container absolutely */
+    bottom: 10px; /* Align model number container to the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.model-no-label {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-right: 5px; /* Add some space between label and model number */
+}
+
+.model-no {
+    font-size: 20px; /* Increase font size */
+    font-weight: 600; /* Increase thickness of font */
+    font-family: 'Arial', sans-serif; /* Apply professional font style */
+}
+
+
+/* Keep close button style */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #333;
+}
+
+/* Style for arrow buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hover effect for arrow buttons */
+.prev:hover,
+.next:hover {
+    color: #555;
+}
+
+/* Modal.css */
+/* Add styles for the label */
+.model-no-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .model-no-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px; /* Add some space between label and model number */
+  }
+  
+  /* modal.css */
+
+  @media only screen and (max-width: 768px) {
+    .modal-content {
+        height: 70vh; /* Reduce height further for smaller screens */
+    }
+  
+    .model-no-label {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+}
+  
