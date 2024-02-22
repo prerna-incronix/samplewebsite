@@ -424,7 +424,7 @@
   background-clip: text; /* Clip the background to the text */
   -webkit-background-clip: text; /* For Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Hide the text color */
-  animation: fillIn 4s forwards; 
+  animation: fillIn 5s forwards; 
   text-align: center;
 }
 
@@ -434,12 +434,12 @@
 
 #polishText {
   font-family: 'Zebulon', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 #eyewearText {
   font-family: 'Mundo', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 @keyframes fillIn {
