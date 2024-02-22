@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "./hero";
 import About from "./About";
 import Category from "./category";
-import './assets/styles.css';
+
 
 const Home = () => {
   return (

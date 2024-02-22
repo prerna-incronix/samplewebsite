@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "./assets/pngs/polish-logo.png";
 import "./assets/styles.css";
+import './CategoryCatalogue';
 
 const Navbar = () => {
   return (
@@ -22,12 +23,12 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Eyewear" activeClassName="active">
+          <NavLink to="/CategoryCatalogue" activeClassName="active">
             Eyewear
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Sunglass" activeClassName="active">
+          <NavLink to="/SunglassCatalogue" activeClassName="active">
             Sunglasses
           </NavLink>
         </li>

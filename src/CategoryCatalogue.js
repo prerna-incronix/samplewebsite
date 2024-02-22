@@ -1,21 +1,15 @@
-//CategoryCatelogue.js
-
-import React, {useState} from "react";
+import React, { useState } from "react";
 import CategoryList from "./CategoryList";
 import ProductList from "./ProductList";
-import { categories, products } from './assets/data/data';
+import { categories } from './assets/data/data';
 import './assets/product.css';
 
 const CategoryCatalogue = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
 
-    const handleCategorySelect = (category) => {
-        setSelectedCategory(category);
+    const handleSelectCategory = (categoryName) => {
+        setSelectedCategory(categoryName);
     };
-
-    const filteredProducts = selectedCategory
-        ? products.filter(product => product.category === selectedCategory.id)
-        : products;
 
     return (
         <div>
@@ -23,10 +17,10 @@ const CategoryCatalogue = () => {
             <div className="catalogue-container">
                 <div className="catalogue-row">
                     <div className="catalogue-col-1">
-                        <CategoryList categories={categories} onSelect={handleCategorySelect} />
+                        <CategoryList categories={categories} onSelect={handleSelectCategory} />
                     </div>    
                     <div className="catalogue-col-2">
-                        <ProductList products={filteredProducts} />
+                        <ProductList selectedCategory={selectedCategory} />
                     </div>
                 </div>
             </div>

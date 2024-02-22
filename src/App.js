@@ -11,18 +11,22 @@ import { Route, Routes } from 'react-router-dom';
 // import About from './About';
 import CategoryCatalogue from './CategoryCatalogue';
 import SunglassCatalogue from './SunglassCatalogue';
+import MainComponent from './maincomponent';
+
 
 function App() {
   return (
     <div>
       <Navbar />
+     
+      
       {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/home" element={<Home />} />
-          <Route path='/eyewear' element={< CategoryCatalogue />} />
-          <Route path='/sunglass' element={<SunglassCatalogue />} />
+           <Route path='/CategoryCatalogue' element={<CategoryCatalogue />} />
+          <Route path='/SunglassCatalogue' element={<SunglassCatalogue />} /> 
           <Route path="/" element={<About />} />
           {/* <Route path='/' element={< E />} />
         <Route path='/' element={<S />} /> */}
