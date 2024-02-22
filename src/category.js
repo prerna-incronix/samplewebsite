@@ -4,7 +4,6 @@ import sunglasses from "./assets/sunglasses.png";
 import eyewear from "./assets/eyewear.png";
 import './assets/styles.css';
 
-
 function Category() {
   return (
     <div className="category-section">
