@@ -114,7 +114,8 @@ function Footer() {
           <hr>
           </hr>
           <div class="copyright-text">
-            COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY <a href="https://incronix.com/" class="highlight-link">INCRONIX</a>
+            <p>COPYRIGHT©2024 | POLISH EYEWEAR</p> 
+            POWERED BY <a href="https://incronix.com/" class="highlight-link">INCRONIX</a>
           </div>
 
         </div>
