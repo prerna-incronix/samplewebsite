@@ -132,3 +132,15 @@
     margin-right: 5px; /* Add some space between label and model number */
   }
   
+  /* modal.css */
+
+  @media only screen and (max-width: 768px) {
+    .modal-content {
+        height: 70vh; /* Reduce height further for smaller screens */
+    }
+  
+    .model-no-label {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+}
+  
