@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 import CategoryCatalogue from './CategoryCatalogue';
 import SunglassCatalogue from './SunglassCatalogue';
 import MainComponent from './maincomponent';
+import Aboutus from'./Aboutus';
 
 
 function App() {
@@ -23,11 +24,11 @@ function App() {
       {
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
+          {<Route path="/About" element={<Aboutus />} /> }
           <Route path="/home" element={<Home />} />
            <Route path='/CategoryCatalogue' element={<CategoryCatalogue />} />
           <Route path='/SunglassCatalogue' element={<SunglassCatalogue />} /> 
-          <Route path="/" element={<About />} />
+          {/* <Route path="/" element={<About />} /> */}
           {/* <Route path='/' element={< E />} />
         <Route path='/' element={<S />} /> */}
         
