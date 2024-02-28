@@ -150,50 +150,39 @@
 
 
 
-.category-list-container {
-  position: relative;
-  margin-top: 20px; /* Add some top margin */
-  padding-left: 70px;
-  padding-right: 120px;
-}
-@media (max-width: 768px) {
-.category-list {
+/* Add or modify the following styles for horizontal navbar format */
+.category-list-horizontal {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   gap: 20px;
   padding: 10px;
   margin: 0;
   background-color: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  overflow: hidden; /* Hide overflow if tabs exceed container width */
-}
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.category-list li {
+.category-list-horizontal li {
   cursor: pointer;
-  padding: 10px 20px; /* Increase padding */
-  border-radius: 10px; /* Adjust border radius */
+  padding: 10px 20px;
+  border-radius: 10px;
   background-color: transparent;
   border: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.category-list li.active {
+.category-list-horizontal li.active {
   background-color: #076142;
   color: #fff;
 }
 
-/* Optional: Adjust font size and weight */
-.category-list li {
+.category-list-horizontal li {
   font-size: 16px;
   font-weight: bold;
 }
 
-/* Optional: Hover effect */
-.category-list li:hover {
+.category-list-horizontal li:hover {
   background-color: #ddd;
   color: #333;
 }
