@@ -36,15 +36,20 @@
 
 .category-list-container {
   position: relative;
-  margin-left: -550px;
-  padding-left: 70px;
-  padding-right: 120px; 
-  margin-top: -80px;
-  padding: 50px; 
+  margin-top: 0px;
+  margin-left: -510px;
+  margin-bottom: 10px;
   width: 600px;
-  height: 150px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc; /* Add border */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+.category-list-container:hover {
+  border-color: #0c0c0c86;
+}
+  
 .category-list {
   list-style-type: none;
   display: flex;
