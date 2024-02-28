@@ -1,208 +1,67 @@
-/* CategoryCatelogue.js */
-
-.catalogue-header{
-  padding-top: 100px;
-  text-align: center;
-}
-  
 .catalogue-container {
-  width: fit-content;
-  margin: 20px 0;
-  padding: 0 10px;
-  justify-content: center;
-  /* display: flex;
-  flex-direction: row; */
+  width: 100%; /* Make the container full-width */
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 0 20px; /* Adjust padding */
+  justify-content: center; /* Center the content horizontally */
 }
-  
+.catalogue-header {
+  padding-bottom: 1px; /* Add padding below the catalogue header */
+  padding-top: 120px;
+}
+
 .catalogue-row {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  /* flex-direction: row;
-  margin-bottom: 10px; */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-around; /* Center items horizontally with gaps */
+  gap: 30px; /* Increase gap between items */
 }
-  
-.catalogue-col-1 {
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding: 0px 10px;
-}
-  
+
+.catalogue-col-1,
 .catalogue-col-2 {
-  flex: 0 0 75%;
-  max-width: 75%;
-  padding: 0 10px;
-}
+  flex: 0 1 100%; /* Full width on small screens */
+  max-width: 100%;
+  padding-left: 85px;
   
-/* CategoryList.js */
-
-.category-card {
-  margin-right: 30px !important;
-  margin-top: 0px;
-  padding: 50px; 
-  width: 180px;
-  height: 250px;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc; /* Add border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
   
-.category-card:hover {
-  border-color: #0c0c0c86;
-}
-  
-.category-card h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-  
-.category-card ul {
-  list-style-type: none;
-  padding: 0px;
-}
-  
-.category-card li {
-  margin-bottom: 5px;
-  cursor: pointer;
-  font-family: 'Times New Roman', sans-serif; /* Set the font family */
-  font-size: 22px; /* Set the font size */
-  font-weight: 400; /* Set the font weight */
-  line-height: 1.5; /* Set the line height */
-  text-align: left;
-}
-  
-.category-button {
-  position: relative;
-  border: none;
-  cursor: pointer;
-  font-family: 'Raleway', sans-serif;
-  font-size: large;
-  background-color: transparent; /* Set button background color to transparent */
-  color: #333; /* Set button text color */
-  padding: 5px 10px; /* Add padding to the button */
-  margin: 0; /* Remove margin */
-  transition: color 0.3s; /* Add transition for color */
 }
 
-.category-button::before {
-  content: '';
-  position: absolute;
-  width: 0; /* Start with no underline */
-  height: 3px; /* Set the thickness of the underline */
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255, 153, 0); /* Set the color of the underline */
-  transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
-}
-
-.category-button:hover::before {
-  width: 100%; /* Fully underline on hover */
-}
-
-.category-button:active,
-.category-button:focus {
-  font-weight: bold;
-  color: #076142;
-  transform: translateY(1px); /* Move the button down slightly when clicked */
-}
-
-.category-button.all {
-  font-weight: bold;
-  color: #076142;
-  transform: translateY(1px); /* Move the button down slightly when clicked */
-}
-
-category-button.all:hover::before {
-  width: 100%; /* Fully underline on hover */
-}
-
-.category-button.all:active,
-.category-button.all:focus {
-  font-weight: normal; /* Reset font weight */
-  color: #333; /* Reset text color */
-   /* Reset transform */
-}
-
-.category-button.all:not(.active) {
-  color: grey; /* Change color to grey when not active */
-}
-
-
-
-/* ProductList.js */
-  
-.product-list {
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc; /* Add border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.product-list:hover {
-  border-color: #0c0c0c86;
-}
-  
-.product-list h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-    
-.card-info-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-  
-.card-info-container {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0px;
-  margin: 0 -5px;
-}
-  
 .product-list li {
-  background-color: #f9f9f9;
+  background-color: #fff;
+  display: -ms-grid;
+  grid-template-columns: repeat(3, 1fr); /* Background color */
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-  flex: 0 0 calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
-  margin: 0 10px 20px; /* Margin around each product item */
+  border-radius: 10px; /* Adjust border radius */
+  padding: 10px; /* Adjust padding */
+  width: 180px; /* Reduce width */
+  height: 230px; /* Reduce height */
+  position: relative; /* Position the overlay */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition */
 }
-  
-.product-item li:hover {
-  background-color: #e9e9e9;
-}
-  
+
 .product-item {
-  width: calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
-  margin: 0 10px 20px; /* Margin around each product item */
-  box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: center;
-  position: relative;
-}
-  
-.product-item img {
-  /* max-width: 100%; */
+  position: relative; /* Position the image */
   width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 5px;
-  object-fit: contain;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
+.product-item img {
+  max-width: 100%; /* Ensure image fills the container */
+  max-height: 100%; /* Ensure image fills the container */
+  border-radius: 8px; /* Adjust border radius */
+  object-fit: contain; /* Ensure image covers the container */
+}
+
 .overlay {
   position: absolute;
-  bottom: 0; /* Position at the bottom */
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 17%;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -210,176 +69,112 @@ category-button.all:hover::before {
   opacity: 0;
   transition: opacity 0.3s;
 }
-  
-.product-item .overlay {
-  opacity: 1;
+
+.product-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
 }
 
 .product-item p {
-  /* margin-top: 10px; */
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  font-size: medium;
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Adjust margin */
 }
 
-/* Responsive Styles  */
 
-/* Media query for 325px width */
-
-/* Responsive styles */
-@media (max-width: 320px) {
+@media (max-width: 1200px) {
   .catalogue-container {
-    width: 100%; /* Set width to 100% */
+    padding: 0 15px; /* Adjust padding for smaller screens */
   }
 
-  .catalogue-row {
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-  }
-
-  .catalogue-col-1 {
-    flex: 0 0 100%; /* Set width to 100% */
-    max-width: 100%; /* Set max-width to 100% */
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-    justify-content: center;
-  }
-
-  .catalogue-col-2 {
-    flex: 0 0 100%; /* Set width to 100% */
-    max-width: 100%; /* Set max-width to 100% */
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  
-  /* ProductList.js */
-
-  .product-list {
-    padding: 5px; /* Reduce padding */
-    border-radius: 10px; /* Reduce border radius */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Reduce box shadow */
-    border: 1px solid #ccc; /* Reduce border width */
-    margin: 10px 0px 0px;
-  }
-
-  .product-item {
-    width: 100%; /* Set width to 100% */
-    margin: 0 0 10px; /* Adjust margin */
-    padding-right: 200px;
-  }
-
-  .product-item img {
-    width: auto; /* Reset width */
-    height: auto; /* Reset height */
-    max-width: 100%; /* Set max-width to 100% */
-    max-height: 100%; /* Set max-height to 100% */
-    border-radius: 0; /* Remove border-radius */
-    object-fit: cover; /* Use cover object-fit */
-  }
-
-  .overlay {
-    height: 1%; /* Reset height */
-    padding: 5px; /* Adjust padding */
-  }
-
-  .product-item .overlay {
-    height: 30%; /* Reset height */
-  }
-
-  .product-item p {
-    margin-top: 5px; /* Adjust margin-top */
-    font-size: small; /* Adjust font size */
+  .product-list li {
+    width: calc(25% - 30px); /* Adjust width for smaller screens to show 4 items in a row with gaps */
+    max-width: calc(25% - 30px); /* Adjust max-width */
   }
 }
 
-/* Responsive styles */
-@media (min-width: 321px) and (max-width: 375px) {
-  /* CategoryCatalogue.js */
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
+@media (max-width: 991px) {
+  .catalogue-container {
+    padding: 0 10px; /* Adjust padding for even smaller screens */
   }
 
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -100px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
+  .product-list li {
+    width: calc(33.33% - 30px); /* Adjust width for smaller screens to show 3 items in a row with gaps */
+    max-width: calc(33.33% - 30px); /* Adjust max-width */
   }
 }
 
-@media (min-width: 376px) and (max-width: 425px) {
-  /* CategoryCatalogue.js */
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
+@media (max-width: 768px) {
+  .catalogue-container {
+    padding: 0 5px; /* Adjust padding for smallest screens */
   }
 
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -100px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
+  .product-list li {
+    width: calc(50% - 30px); /* Adjust width for smallest screens to show 2 items in a row with gaps */
+    max-width: calc(50% - 30px); /* Adjust max-width */
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-  /* CategoryCatalogue.js */
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
+@media (max-width: 576px) {
+  .catalogue-container {
+    padding: 0 5px; /* Adjust padding for smallest screens */
   }
 
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -190px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
+  .product-list li {
+    width: calc(100% - 30px); /* Adjust width for smallest screens to show 1 item per row with gaps */
+    max-width: calc(100% - 30px); /* Adjust max-width */
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* CategoryCatalogue.js */
 
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
 
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
 
-  /* ProductList.js */
 
-  .product-list {
-    margin: 250px -10px 0 -250px; /* Adjust margin */
-  }
 
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
+.category-list-container {
+  position: relative;
+  margin-top: 20px; /* Add some top margin */
+  padding-left: 70px;
+  padding-right: 120px;
+}
+@media (max-width: 768px) {
+.category-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  margin: 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow: hidden; /* Hide overflow if tabs exceed container width */
+}
+}
+
+.category-list li {
+  cursor: pointer;
+  padding: 10px 20px; /* Increase padding */
+  border-radius: 10px; /* Adjust border radius */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category-list li.active {
+  background-color: #076142;
+  color: #fff;
+}
+
+/* Optional: Adjust font size and weight */
+.category-list li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Optional: Hover effect */
+.category-list li:hover {
+  background-color: #ddd;
+  color: #333;
 }
