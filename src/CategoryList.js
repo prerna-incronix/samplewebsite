@@ -1,14 +1,16 @@
-// CategoryList.js
-
 import React from "react";
 import "./assets/product.css";
+
 
 const CategoryList = ({ categories, selectedCategory, onSelect }) => {
   return (
     <div className="category-list-container">
-      <ul className="category-list-horizontal">
+      <ul className="category-list">
         <p className="category-header">Categories</p>
-        <li className={selectedCategory === "" ? "active" : ""} onClick={() => onSelect("")}>
+        <li
+          className={selectedCategory === "" ? "active" : ""}
+          onClick={() => onSelect("")}
+        >
           All
         </li>
         {categories.map((category) => (
@@ -24,5 +26,6 @@ const CategoryList = ({ categories, selectedCategory, onSelect }) => {
     </div>
   );
 };
+
 
 export default CategoryList;
