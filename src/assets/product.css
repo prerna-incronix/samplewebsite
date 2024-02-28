@@ -89,7 +89,7 @@
     border-radius: 15px; /* Add border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
     border: 1px solid #ccc; /* Add border */
-    background-color: #fff; /* Add background color */
+    background-color: #ffffff00; /* Add background color */
   }
 
   .category-list {
@@ -235,7 +235,7 @@
     border-radius: 0;
     box-shadow: none;
     border: none;
-   
+    background-color: transparent;
   }
 
   .category-list {
@@ -303,6 +303,7 @@
     box-shadow: none; /* Remove box shadow */
     border: none; /* Remove border */
     padding-bottom: 100px;
+    background-color: transparent;
   }
 
   .category-list {
@@ -410,6 +411,7 @@
     border-radius: 0; /* Remove border radius */
     box-shadow: none; /* Remove box shadow */
     border: none; /* Remove border */
+    background-color: transparent;
   }
 
   .category-list {
@@ -475,6 +477,7 @@
     border-radius: 0;
     box-shadow: none;
     border: none;
+    background-color: transparent;
   }
 
   .category-list {
