@@ -1,69 +1,175 @@
-/* CategoryCatalogue.js */
-
-.catalogue-header{
-  padding-top: 100px;
-  text-align: center;
-}
-  
 .catalogue-container {
-  max-width: 1200px;
-  margin: 20px 0;
-  padding: 0 10px;
+  width: 100%; /* Make the container full-width */
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 0 20px; /* Adjust padding */
+  justify-content: center; /* Center the content horizontally */
 }
-  
+.catalogue-header {
+  padding-bottom: 1px; /* Add padding below the catalogue header */
+  padding-top: 120px;
+}
+
 .catalogue-row {
   display: flex;
-  flex-wrap: nowrap;
-  margin: 0 -5px;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-around; /* Center items horizontally with gaps */
+  gap: 30px; /* Increase gap between items */
 }
-  
-.catalogue-col-1 {
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding: 0px 10px;
-}
-  
+
+.catalogue-col-1,
 .catalogue-col-2 {
-  flex: 0 0 75%;
-  max-width: 75%;
-  padding: 0 10px;
+  flex: 0 1 100%; /* Full width on small screens */
+  max-width: 100%;
+  padding-left: 85px;
+  
+  
+}
+
+.product-list li {
+  background-color: #fff;
+  display: -ms-grid;
+  grid-template-columns: repeat(3, 1fr); /* Background color */
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Adjust border radius */
+  padding: 10px; /* Adjust padding */
+  width: 180px; /* Reduce width */
+  height: 230px; /* Reduce height */
+  position: relative; /* Position the overlay */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition */
 }
 
 
-/* CategoryList.js */
+.product-item {
+  position: relative; /* Position the image */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Position the image */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.product-item img {
+  max-width: 100%; /* Ensure image fills the container */
+  max-height: 100%; /* Ensure image fills the container */
+  border-radius: 8px; /* Adjust border radius */
+  object-fit: contain; /* Ensure image covers the container */
+  max-width: 100%; /* Ensure image fills the container */
+  max-height: 100%; /* Ensure image fills the container */
+  border-radius: 8px; /* Adjust border radius */
+  object-fit: contain; /* Ensure image covers the container */
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+
+.product-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.product-item p {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Adjust margin */
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Adjust margin */
+}
+
+
+@media (max-width: 1200px) {
+  .catalogue-container {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+
+  .product-list li {
+    width: calc(25% - 30px); /* Adjust width for smaller screens to show 4 items in a row with gaps */
+    max-width: calc(25% - 30px); /* Adjust max-width */
+  }
+}
+
+@media (max-width: 991px) {
+  .catalogue-container {
+    padding: 0 10px; /* Adjust padding for even smaller screens */
+  }
+
+  .product-list li {
+    width: calc(33.33% - 30px); /* Adjust width for smaller screens to show 3 items in a row with gaps */
+    max-width: calc(33.33% - 30px); /* Adjust max-width */
+  }
+}
+
+@media (max-width: 768px) {
+  .catalogue-container {
+    padding: 0 5px; /* Adjust padding for smallest screens */
+  }
+
+  .product-list li {
+    width: calc(50% - 30px); /* Adjust width for smallest screens to show 2 items in a row with gaps */
+    max-width: calc(50% - 30px); /* Adjust max-width */
+  }
+}
+
+@media (max-width: 576px) {
+  .catalogue-container {
+    padding: 0 5px; /* Adjust padding for smallest screens */
+  }
+
+  .product-list li {
+    width: calc(100% - 30px); /* Adjust width for smallest screens to show 1 item per row with gaps */
+    max-width: calc(100% - 30px); /* Adjust max-width */
+  }
+}
+
+
+
+
+
 
 .category-list-container {
-  position: absolute;
-  margin-right: 30px !important;
-  margin-top: 0px; /* Add some top margin */
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc; /* Add border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  position: relative;
+  margin-top: 20px; /* Add some top margin */
+  padding-left: 70px;
+  padding-right: 120px;
 }
-
-.category-list-container:hover {
-  border-color: #0c0c0c86;
-}
-
+@media (max-width: 768px) {
 .category-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 5px;
-  margin: 0;
-  background-color: transparent;
-}
-
-.category-header{
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
   padding: 10px;
-  font-weight: bold;
-  font-size: larger;
+  margin: 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow: hidden; /* Hide overflow if tabs exceed container width */
+}
 }
 
 .category-list li {
@@ -78,7 +184,6 @@
 .category-list li.active {
   background-color: #076142;
   color: #fff;
-  
 }
 
 /* Optional: Adjust font size and weight */
@@ -92,160 +197,3 @@
   background-color: #ddd;
   color: #333;
 }
-
-/* ProductList.js */
-
-.product-list{
-  margin-left: -300px !important;
-  margin-right: -150px !important;
-  padding: 10px;
-  margin-top: 70px;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc; /* Add border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.card-info-container {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0px;
-  margin: 0 -50px;
-}
-
-.card-info-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.product-list li {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  width: 180px; /* Reduce width */
-  height: 230px; /* Reduce height */
-  position: relative; /* Position the overlay */
-  overflow: hidden; /* Hide overflow content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transition */
-  flex: 0 0 calc(25% - 20px); /* 25% width with 20px margin on both sides */
-  margin: 0 10px 20px; /* Margin around each category item */
-  text-align: center;
-}
-
-.product-item {
-  position: relative; /* Position the image */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.product-item img {
-  max-width: 100%; /* Ensure image fills the container */
-  max-height: 100%; /* Ensure image fills the container */
-  border-radius: 8px; /* Adjust border radius */
-  object-fit: contain; /* Ensure image covers the container */
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.product-item:hover .overlay {
-  opacity: 1; /* Show overlay on hover */
-}
-
-.product-item p {
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px; /* Adjust font size */
-  margin-top: 10px; /* Adjust margin */
-}
-
-
-
-
-/* Responsive Styles  */
-
-/* Media query for 325px width */
-
-/* CategoryCatalogue.js */
-
-/* Existing styles */
-
-/* Responsive styles for screens with a maximum width of 325px */
-@media (max-width: 320px) {
-  .catalogue-col-1, .catalogue-col-2 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .category-list {
-    flex-direction: column; /* Display items in a column */
-    align-items: center; /* Center items horizontally */
-  }
-
-  .category-list li {
-    width: 100%; /* Full width for each item */
-    margin-bottom: 10px; /* Add some space between items */
-  }
-
-  .category-list-container {
-    margin-right: 0 !important; /* Remove right margin */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove box shadow */
-    border: none; /* Remove border */
-  }
-
-  .category-header {
-    padding: 0; /* Remove padding */
-  }
-
-
-  .product-list {
-    margin-left: -20px !important; /* Remove left margin */
-    margin-right: 0 !important; /* Remove right margin */
-    padding: 0 10px; /* Adjust padding */
-    margin-top: 300px; /* Adjust top margin */
-  }
-
-  .product-list li {
-    width: auto; /* Auto width to fit the container */
-    height: auto; /* Auto height to fit the content */
-    margin-bottom: 20px; /* Add space between products */
-    flex: 0 0 100%; /* Full width for each product */
-    margin: 0; /* Remove margin */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove box shadow */
-    border: none; /* Remove border */
-    text-align: left; /* Align text to the left */
-    padding: 15px; /* Adjust padding */
-    overflow: hidden;
-  }
-
-  .overlay {
-    position: static; /* Change position to static */
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
-    overflow: hidden;
-  }
-
-
-}
-
-
-
