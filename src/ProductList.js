@@ -1,6 +1,6 @@
-// EyewearList.js
+// productList.js
 import React, { useState, useEffect } from 'react';
-import './product.css';
+import "./assets/product.css";
 import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import firebaseConfig from './firebaseConfig'; // Make sure this path is correct
