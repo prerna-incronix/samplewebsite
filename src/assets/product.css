@@ -1,4 +1,4 @@
-/* CategoryCatelogue.js */
+/* CategoryCatalogue.js */
 
 .catalogue-header{
   padding-top: 100px;
@@ -6,20 +6,15 @@
 }
   
 .catalogue-container {
-  width: fit-content;
+  max-width: 1200px;
   margin: 20px 0;
   padding: 0 10px;
-  justify-content: center;
-  /* display: flex;
-  flex-direction: row; */
 }
   
 .catalogue-row {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  /* flex-direction: row;
-  margin-bottom: 10px; */
+  margin: 0 -5px;
 }
   
 .catalogue-col-1 {
@@ -33,176 +28,134 @@
   max-width: 75%;
   padding: 0 10px;
 }
-  
+
+
 /* CategoryList.js */
 
-.category-card {
+.category-list-container {
+  position: absolute;
   margin-right: 30px !important;
-  margin-top: 0px;
-  padding: 50px; 
-  width: 180px;
-  height: 250px;
+  margin-top: 0px; /* Add some top margin */
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid #ccc; /* Add border */
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-  
-.category-card:hover {
+
+.category-list-container:hover {
   border-color: #0c0c0c86;
 }
-  
-.category-card h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-  
-.category-card ul {
+
+.category-list {
   list-style-type: none;
-  padding: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  margin: 0;
+  background-color: transparent;
 }
-  
-.category-card li {
-  margin-bottom: 5px;
-  cursor: pointer;
-  font-family: 'Times New Roman', sans-serif; /* Set the font family */
-  font-size: 22px; /* Set the font size */
-  font-weight: 400; /* Set the font weight */
-  line-height: 1.5; /* Set the line height */
-  text-align: left;
-}
-  
-.category-button {
-  position: relative;
-  border: none;
-  cursor: pointer;
+
+.category-header{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
   font-family: 'Raleway', sans-serif;
-  font-size: large;
-  background-color: transparent; /* Set button background color to transparent */
-  color: #333; /* Set button text color */
-  padding: 5px 10px; /* Add padding to the button */
-  margin: 0; /* Remove margin */
-  transition: color 0.3s; /* Add transition for color */
-}
-
-.category-button::before {
-  content: '';
-  position: absolute;
-  width: 0; /* Start with no underline */
-  height: 3px; /* Set the thickness of the underline */
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255, 153, 0); /* Set the color of the underline */
-  transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
-}
-
-.category-button:hover::before {
-  width: 100%; /* Fully underline on hover */
-}
-
-.category-button:active,
-.category-button:focus {
+  padding: 10px;
   font-weight: bold;
-  color: #076142;
-  transform: translateY(1px); /* Move the button down slightly when clicked */
+  font-size: larger;
 }
 
-.category-button.all {
+.category-list li {
+  cursor: pointer;
+  padding: 10px 20px; /* Increase padding */
+  border-radius: 10px; /* Adjust border radius */
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category-list li.active {
+  background-color: #076142;
+  color: #fff;
+  
+}
+
+/* Optional: Adjust font size and weight */
+.category-list li {
+  font-size: 16px;
   font-weight: bold;
-  color: #076142;
-  transform: translateY(1px); /* Move the button down slightly when clicked */
 }
 
-category-button.all:hover::before {
-  width: 100%; /* Fully underline on hover */
+/* Optional: Hover effect */
+.category-list li:hover {
+  background-color: #ddd;
+  color: #333;
 }
-
-.category-button.all:active,
-.category-button.all:focus {
-  font-weight: normal; /* Reset font weight */
-  color: #333; /* Reset text color */
-   /* Reset transform */
-}
-
-.category-button.all:not(.active) {
-  color: grey; /* Change color to grey when not active */
-}
-
-
 
 /* ProductList.js */
-  
-.product-list {
+
+.product-list{
+  margin-left: -300px !important;
+  margin-right: -150px !important;
   padding: 10px;
+  margin-top: 70px;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid #ccc; /* Add border */
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.product-list:hover {
-  border-color: #0c0c0c86;
-}
-  
-.product-list h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-    
-.card-info-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-  
 .card-info-container {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0px;
-  margin: 0 -5px;
+  margin: 0 -50px;
 }
-  
+
+.card-info-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .product-list li {
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
-  margin-bottom: 10px;
-  flex: 0 0 calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
-  margin: 0 10px 20px; /* Margin around each product item */
-}
-  
-.product-item li:hover {
-  background-color: #e9e9e9;
-}
-  
-.product-item {
-  width: calc(33.33% - 20px); /* 33.33% width with 20px margin on both sides */
-  margin: 0 10px 20px; /* Margin around each product item */
-  box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  width: 180px; /* Reduce width */
+  height: 230px; /* Reduce height */
+  position: relative; /* Position the overlay */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition */
+  flex: 0 0 calc(25% - 20px); /* 25% width with 20px margin on both sides */
+  margin: 0 10px 20px; /* Margin around each category item */
   text-align: center;
-  position: relative;
 }
-  
-.product-item img {
-  /* max-width: 100%; */
+
+.product-item {
+  position: relative; /* Position the image */
   width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 5px;
-  object-fit: contain;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
+.product-item img {
+  max-width: 100%; /* Ensure image fills the container */
+  max-height: 100%; /* Ensure image fills the container */
+  border-radius: 8px; /* Adjust border radius */
+  object-fit: contain; /* Ensure image covers the container */
+}
+
 .overlay {
   position: absolute;
-  bottom: 0; /* Position at the bottom */
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 17%;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -210,176 +163,89 @@ category-button.all:hover::before {
   opacity: 0;
   transition: opacity 0.3s;
 }
-  
-.product-item .overlay {
-  opacity: 1;
+
+.product-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
 }
 
 .product-item p {
-  /* margin-top: 10px; */
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  font-size: medium;
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Adjust margin */
 }
+
+
+
 
 /* Responsive Styles  */
 
 /* Media query for 325px width */
 
-/* Responsive styles */
+/* CategoryCatalogue.js */
+
+/* Existing styles */
+
+/* Responsive styles for screens with a maximum width of 325px */
 @media (max-width: 320px) {
-  .catalogue-container {
-    width: 100%; /* Set width to 100% */
+  .catalogue-col-1, .catalogue-col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px;
   }
 
-  .catalogue-row {
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  .category-list {
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center items horizontally */
   }
 
-  .catalogue-col-1 {
-    flex: 0 0 100%; /* Set width to 100% */
-    max-width: 100%; /* Set max-width to 100% */
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-    justify-content: center;
+  .category-list li {
+    width: 100%; /* Full width for each item */
+    margin-bottom: 10px; /* Add some space between items */
   }
 
-  .catalogue-col-2 {
-    flex: 0 0 100%; /* Set width to 100% */
-    max-width: 100%; /* Set max-width to 100% */
-    padding: 0 10px; /* Adjust padding */
+  .category-list-container {
+    margin-right: 0 !important; /* Remove right margin */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
   }
 
-  
-  /* ProductList.js */
+  .category-header {
+    padding: 0; /* Remove padding */
+  }
+
 
   .product-list {
-    padding: 5px; /* Reduce padding */
-    border-radius: 10px; /* Reduce border radius */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Reduce box shadow */
-    border: 1px solid #ccc; /* Reduce border width */
-    margin: 10px 0px 0px;
+    margin-left: -20px !important; /* Remove left margin */
+    margin-right: 0 !important; /* Remove right margin */
+    padding: 0 10px; /* Adjust padding */
+    margin-top: 300px; /* Adjust top margin */
   }
 
-  .product-item {
-    width: 100%; /* Set width to 100% */
-    margin: 0 0 10px; /* Adjust margin */
-    padding-right: 200px;
-  }
-
-  .product-item img {
-    width: auto; /* Reset width */
-    height: auto; /* Reset height */
-    max-width: 100%; /* Set max-width to 100% */
-    max-height: 100%; /* Set max-height to 100% */
-    border-radius: 0; /* Remove border-radius */
-    object-fit: cover; /* Use cover object-fit */
+  .product-list li {
+    width: auto; /* Auto width to fit the container */
+    height: auto; /* Auto height to fit the content */
+    margin-bottom: 20px; /* Add space between products */
+    flex: 0 0 100%; /* Full width for each product */
+    margin: 0; /* Remove margin */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+    text-align: left; /* Align text to the left */
+    padding: 15px; /* Adjust padding */
+    overflow: hidden;
   }
 
   .overlay {
-    height: 1%; /* Reset height */
-    padding: 5px; /* Adjust padding */
+    position: static; /* Change position to static */
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+    overflow: hidden;
   }
 
-  .product-item .overlay {
-    height: 30%; /* Reset height */
-  }
 
-  .product-item p {
-    margin-top: 5px; /* Adjust margin-top */
-    font-size: small; /* Adjust font size */
-  }
 }
 
-/* Responsive styles */
-@media (min-width: 321px) and (max-width: 375px) {
-  /* CategoryCatalogue.js */
 
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
 
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -100px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}
-
-@media (min-width: 376px) and (max-width: 425px) {
-  /* CategoryCatalogue.js */
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
-
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -100px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-  /* CategoryCatalogue.js */
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
-
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -190px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* CategoryCatalogue.js */
-
-  .catalogue-col-1 {
-    padding: 0 5px; /* Adjust padding */
-    margin-bottom: 10px; /* Add margin-bottom to separate columns */
-  }
-
-  .catalogue-col-2 {
-    padding: 0 10px; /* Adjust padding */
-  }
-
-  /* ProductList.js */
-
-  .product-list {
-    margin: 250px -10px 0 -250px; /* Adjust margin */
-  }
-
-  .product-item {
-    padding-right: 0; /* Reset padding-right */
-  }
-}

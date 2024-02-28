@@ -1,6 +1,7 @@
 // SunglassCategoryList.js
 import React from "react";
 import './assets/product.css'; // Import the CSS file
+import './assets/product.css'; // Import the CSS file
 
 const SunglassCategoryList = ({ categories, onSelect }) => {
     return (
@@ -8,11 +9,19 @@ const SunglassCategoryList = ({ categories, onSelect }) => {
         
             <ul className="category-list"> {/* Apply category-list class */}
                 <li onClick={() => onSelect("")}>All</li>
+        <div className="category-list-container"> {/* Apply category-list-container class */}
+        
+            <ul className="category-list"> {/* Apply category-list class */}
+            <p className="category-list">Categories:</p>
+                <li onClick={() => onSelect("")}>All</li>
                 {categories.map(category => (
+                    <li key={category.id} onClick={() => onSelect(category.name)}>
+                        {category.name}
                     <li key={category.id} onClick={() => onSelect(category.name)}>
                         {category.name}
                     </li>
                 ))}
+            </ul> 
             </ul> 
         </div>
     );
