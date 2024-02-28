@@ -56,11 +56,11 @@ const Navbar = () => {
               style={{ cursor: "pointer" }}
               className="scroll-link"
             >
-              Explore
+              About
             </ScrollLink>
           ) : (
             <NavLink to="/About">
-              Explore
+              AboutUs
             </NavLink>
           )}
         </li>
