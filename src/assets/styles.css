@@ -441,8 +441,8 @@
   font-weight: bold;
  }
  @font-face {
-  font-family: "Mundo";
-  src: local("Logo"),
+  font-family: "Mundo"; 
+  src: local("Logo"), 
    url("../Fonts/Logo/Mundo\ Sans\ Std\ Medium\ Italic.otf") format("truetype");
  }
 
