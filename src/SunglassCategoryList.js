@@ -22,4 +22,4 @@ const SunglassCategoryList = ({ categories, onSelect }) => {
     );
 }
 
-export default SunglassCategoryList;
+                export default SunglassCategoryList;
