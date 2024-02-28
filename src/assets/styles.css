@@ -360,8 +360,8 @@ category-section {
 
 .category-tile {
   position: relative;
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 100px;
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
