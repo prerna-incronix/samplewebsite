@@ -28,19 +28,16 @@
 
 .product-list li {
   background-color: #fff;
-  display: -ms-grid;
-  grid-template-columns: repeat(3, 1fr); /* Background color */
   border: 1px solid #ddd;
-  border-radius: 10px; /* Adjust border radius */
-  padding: 10px; /* Adjust padding */
-  width: 180px; /* Reduce width */
-  height: 230px; /* Reduce height */
-  position: relative; /* Position the overlay */
-  overflow: hidden; /* Hide overflow content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transition */
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
 
 .product-item {
   position: relative; /* Position the image */
@@ -98,6 +95,14 @@
   margin-top: 10px; /* Adjust margin */
   font-size: 14px; /* Adjust font size */
   margin-top: 10px; /* Adjust margin */
+}
+
+@media (max-width: 576px) {
+  .product-list li {
+    width: calc(100% - 20px); /* Adjust width for smaller screens to show 1 item per row with gaps */
+    max-width: calc(100% - 20px);
+    margin-bottom: 20px; /* Add margin between items */
+  }
 }
 
 
@@ -196,4 +201,5 @@
 .category-list li:hover {
   background-color: #ddd;
   color: #333;
+}
 }
