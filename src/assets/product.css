@@ -23,20 +23,20 @@
 .catalogue-col-1 {
   flex: 0 0 25%;
   max-width: 25%;
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
 }
   
 .catalogue-col-2 {
   flex: 0 0 75%;
   max-width: 75%;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 /* CategoryList.js */
 
 .category-list-container {
   position: absolute;
-  margin-left: -508px;
+  margin-left: -108px;
   margin-top: 0px; /* Add some top margin */
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -185,12 +185,16 @@
 
 
 
-/* CategoryCatalogue.js */
 
-/* Existing styles */
+
 
 /* Responsive styles for screens with a maximum width of 325px */
-@media (max-width: 325px) {
+
+@media (max-width: 320px) {
+
+  .catalogue-row {
+    justify-content: center; 
+  }
 
   .catalogue-col-1, .catalogue-col-2 {
     flex: 0 0 100%;
@@ -198,45 +202,52 @@
     padding: 0 10px;
   }
 
+  .category-list-container {
+    margin-left: auto; /* Auto margin for centering */
+    margin-right: auto; /* Auto margin for centering */
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+
   .category-list {
-    flex-direction: column; /* Display items in a column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding-left: 0; /* Remove left padding */
   }
 
   .category-list li {
-    width: 100%; /* Full width for each item */
-    margin-bottom: 10px; /* Add some space between items */
-  }
-
-  .category-list-container {
-    margin-right: 0 !important; /* Remove right margin */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove box shadow */
-    border: none; /* Remove border */
+    width: 100%;
+    padding: 10px 0; /* Adjust padding */
   }
 
   .category-header {
-    padding: 0; /* Remove padding */
+    display: none; /* Hide the category header in small screens */
   }
-
+  
   .product-list {
-    margin-left: 0 !important; /* Remove left margin */
-    margin-right: 0 !important; /* Remove right margin */
-    padding: 0 10px; /* Adjust padding */
-    margin-top: 20px; /* Adjust top margin */
+    margin-top: 200px;
+    margin-left: 0px; /* Adjust margin for smaller screens */
+    margin-right: 0px; /* Adjust margin for smaller screens */
+    justify-content: center;
   }
 
   .product-list li {
-    width: auto; /* Auto width to fit the container */
-    height: auto; /* Auto height to fit the content */
-    margin-bottom: 20px; /* Add space between products */
-    flex: 0 0 100%; /* Full width for each product */
-    margin: 0; /* Remove margin */
+    width: calc(100% - 20px); /* Full width with 20px margin on both sides for a single product in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center;
+  }
+
+  .product-item img {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Allow the height to adjust automatically */
     border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove box shadow */
-    border: none; /* Remove border */
-    text-align: left; /* Align text to the left */
-    padding: 15px; /* Adjust padding */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin-left: 70px;
   }
 
   .overlay {
@@ -245,3 +256,254 @@
     padding: 10px; /* Adjust padding */
   }
 }
+
+@media (min-width: 321px) and (max-width: 375px) {
+
+  .catalogue-row {
+    justify-content: center; 
+  }
+
+  .catalogue-col-1, .catalogue-col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .category-list-container {
+    margin-left: auto; /* Adjust margin for smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    text-align: center; /* Center text */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .category-list li {
+    width: 100%; /* Adjust width to fit content */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .category-header {
+    display: none; /* Hide the category header in small screens */
+  }
+
+  .product-list {
+    margin-top: 200px;
+    margin-left: -10px; /* Adjust margin for smaller screens */
+    margin-right: -10px; /* Adjust margin for smaller screens */
+  }
+
+  .product-list li {
+    width: calc(100% - 20px); /* Full width with 20px margin on both sides for a single product in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center;
+  }
+  
+  .product-item img {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Allow the height to adjust automatically */
+    border-radius: 0; /* Remove border radius */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin-left: 70px;
+  }
+
+  .overlay {
+    position: static; /* Change position to static */
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+
+  .catalogue-row {
+    justify-content: center; 
+  }
+
+  .catalogue-col-1, .catalogue-col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .category-list-container {
+    margin-left: auto; /* Adjust margin for smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    text-align: center; /* Center text */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .category-list li {
+    width: 100%; /* Adjust width to fit content */
+    padding: 10px 0; /* Adjust padding */
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .category-header {
+    display: none; /* Hide the category header in small screens */
+  }
+
+  .product-list {
+    margin-top: 200px; /* Adjust margin for smaller screens */
+    margin-left: -5px; /* Adjust margin for smaller screens */
+    margin-right: -5px; /* Adjust margin for smaller screens */
+  }
+
+  .product-list li {
+    width: calc(100% - 20px); /* Full width with 20px margin on both sides for a single product in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center;
+  }
+
+  .product-item img {
+    margin-left: 0; /* Reset left margin */
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+  .catalogue-row {
+    justify-content: center; 
+  }
+
+  .catalogue-col-1,
+  .catalogue-col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px; /* Add horizontal padding */
+    margin-bottom: 20px; /* Add bottom margin */
+  } 
+
+  .category-list-container {
+    margin-left: auto; /* Auto margin for centering */
+    margin-right: auto; /* Auto margin for centering */
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .category-list li {
+    width: 100%;
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .category-header {
+    display: none; /* Hide the category header in small screens */
+  }
+
+  .product-list {
+    margin-top: 200px;
+    margin-left: 0px; /* Adjust margin for smaller screens */
+    margin-right: 0px; /* Adjust margin for smaller screens */
+    justify-content: center;
+  }
+
+  .product-list li {
+    width: calc(50% - 20px); /* Half width with 20px margin on both sides for two products in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center;
+  }
+
+  .product-item img {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Allow the height to adjust automatically */
+    border-radius: 0; /* Remove border radius */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin-left: 100px; /* Adjust margin */
+  }
+
+  .overlay {
+    position: static; /* Change position to static */
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .catalogue-col-1,
+  .catalogue-col-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px; /* Add horizontal padding */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
+
+  .category-list-container {
+    margin-left: 10p0x; /* Auto margin for centering */
+    margin-right: auto; /* Auto margin for centering */
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .category-list {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding-left: 0; 
+  }
+
+  /* .category-list li {
+    width: 100%;
+    padding: 10px 0; 
+  } */
+
+  .category-header {
+    display: none; /* Hide the category header in small screens */
+  }
+
+  .product-list {
+    margin-top: 20px;
+    margin-left: -160px; /* Adjust margin for smaller screens */
+    margin-right: -180px; /* Adjust margin for smaller screens */
+    justify-content: center;
+  }
+
+  .product-list li {
+    width: calc(33.33% - 20px); /* One-third width with 20px margin on both sides for three products in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center;
+  }
+
+  .product-item img {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Allow the height to adjust automatically */
+    border-radius: 0; /* Remove border radius */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin-left: 100px; /* Adjust margin */
+  }
+
+  .overlay {
+    position: static; /* Change position to static */
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
