@@ -1,6 +1,7 @@
 import React from "react";
 import "./assets/product.css";
 
+
 const CategoryList = ({ categories, selectedCategory, onSelect }) => {
   return (
     <div className="category-list-container">
@@ -25,5 +26,6 @@ const CategoryList = ({ categories, selectedCategory, onSelect }) => {
     </div>
   );
 };
+
 
 export default CategoryList;
