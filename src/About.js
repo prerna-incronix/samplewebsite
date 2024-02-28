@@ -27,9 +27,8 @@ const AboutUs = () => {
 
           <p style={{ fontSize: '25px' }}>Uniting style with health and precision vision</p>
 
-          <p>
-             Fostering a community where Indians proudly embrace their roots.
-          </p>
+          <p style={{ fontSize: '25px' }}>Fostering a community where Indians proudly embrace their roots</p>
+          
 
           <p>Providing all with bold and stylish confidence.</p>
         </div>
