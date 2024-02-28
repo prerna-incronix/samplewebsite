@@ -20,7 +20,7 @@ const Navbar = () => {
         <NavLink to="/home">
           <ul>
             <li><span id="polishText">POLISH</span></li>
-            <li><span id="eyewearText">EyeWear</span></li>
+            <li><span id="eyewearText">Eyewear</span></li>
           </ul>
         </NavLink>
       </div>
