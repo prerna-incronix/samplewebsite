@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import GooglePlayBadge from "./assets/pngs/google-play-badge.png";
 import { Link } from "react-router-dom";
+import IncronixLogo from './assets/pngs/incronix.png';
 function Footer() {
   return (
     <>
@@ -13,11 +14,7 @@ function Footer() {
         <div className="container">
           {/* Polish logo */}
           <div className="footer-content">
-            <div className="footer-column" >
-              <h2 >Contact Us</h2>
-              <p>Email: example@example.com</p>
-              <p>Phone: +123 456 789</p>
-            </div>
+           
 
             <div className="footer-column">
               <h2>Useful Links</h2>
@@ -113,9 +110,12 @@ function Footer() {
           </div>
           <hr>
           </hr>
-          <div class="copyright-text">
-            COPYRIGHT © 2024 POLISH EYEWEAR. ALL RIGHTS RESERVED. POWERED BY <a href="https://incronix.com/" class="highlight-link">INCRONIX</a>
-          </div>
+          <div className="copyright-text">
+  COPYRIGHT 2024 | POLISH EYEWEAR |
+  {/* Replace the text with the Incronix logo image */}
+  <p>POWERED BY <a href="https://incronix.com/" className="highlight-link" target="_blank"><img src={IncronixLogo} alt="Incronix Logo" className="powered-by-logo" /></a></p>
+</div>
+
 
         </div>
       </footer>

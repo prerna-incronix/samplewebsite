@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+.powered-by-logo {
+  height: 70px; /* Adjust the height of the image */
+  padding-left: 10px;
+  padding-top: 10px;
+  width: auto; /* Allow the width to adjust proportionally */
+}
+
 .polish-logo {
   margin-bottom: -50px; /* Adjust margin as needed */
 }

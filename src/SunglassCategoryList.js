@@ -1,6 +1,7 @@
 // SunglassCategoryList.js
 import React from "react";
 import './assets/product.css'; // Import the CSS file
+import './assets/product.css'; // Import the CSS file
 
 const SunglassCategoryList = ({ categories, onSelect }) => {
     return (
@@ -12,9 +13,11 @@ const SunglassCategoryList = ({ categories, onSelect }) => {
                 {categories.map(category => (
                     <li key={category.id} onClick={() => onSelect(category.name)}>
                         {category.name}
+                   
                     </li>
                 ))}
             </ul> 
+             
         </div>
     );
 }
