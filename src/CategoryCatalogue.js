@@ -1,3 +1,5 @@
+//CategoryCatalogue.js
+
 import React, { useState } from "react";
 import CategoryList from "./CategoryList";
 import ProductList from "./ProductList";
