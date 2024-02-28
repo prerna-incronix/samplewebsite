@@ -35,37 +35,33 @@
 /* CategoryList.js */
 
 .category-list-container {
-  position: absolute;
-  margin-left: -508px;
-  margin-top: 0px; /* Add some top margin */
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc; /* Add border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-left: auto; /* Auto margin for centering */
+  margin-right: auto; /* Auto margin for centering */
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
 }
 
-.category-list-container:hover {
-  border-color: #0c0c0c86;
-}
 
 .category-list {
-  list-style-type: none;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 5px;
-  margin: 0;
-  background-color: transparent;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  padding-left: 0; /* Remove left padding */
 }
 
-.category-header{
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  font-family: 'Raleway', sans-serif;
-  padding: 10px;
-  font-weight: bold;
-  font-size: larger;
+
+.category-list li {
+  width: 100%;
+  padding: 10px 0; /* Adjust padding */
+}
+
+
+.category-header {
+  display: none; /* Hide the category header in small screens */
 }
 
 .category-list li {
@@ -187,61 +183,77 @@
 
 /* CategoryCatalogue.js */
 
-/* Existing styles */
-
-/* Responsive styles for screens with a maximum width of 325px */
-@media (max-width: 325px) {
-
-  .catalogue-col-1, .catalogue-col-2 {
+/* Responsive styles */
+@media (max-width: 768px) {
+  .catalogue-col-1,
+  .catalogue-col-2 {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0 10px;
   }
+}
 
+/* CategoryList.js */
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .category-list {
-    flex-direction: column; /* Display items in a column */
-    align-items: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
   }
 
   .category-list li {
-    width: 100%; /* Full width for each item */
-    margin-bottom: 10px; /* Add some space between items */
+    padding: 10px 15px;
+    font-size: 14px;
   }
+}
 
+@media (max-width: 576px) {
   .category-list-container {
-    margin-right: 0 !important; /* Remove right margin */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove box shadow */
-    border: none; /* Remove border */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
   }
 
-  .category-header {
-    padding: 0; /* Remove padding */
+  .category-list {
+    justify-content: center;
   }
 
+  .category-list li {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/* ProductList.js */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .product-list li {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
   .product-list {
-    margin-left: 0 !important; /* Remove left margin */
-    margin-right: 0 !important; /* Remove right margin */
-    padding: 0 10px; /* Adjust padding */
-    margin-top: 20px; /* Adjust top margin */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
   }
 
   .product-list li {
-    width: auto; /* Auto width to fit the container */
-    height: auto; /* Auto height to fit the content */
-    margin-bottom: 20px; /* Add space between products */
-    flex: 0 0 100%; /* Full width for each product */
-    margin: 0; /* Remove margin */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove box shadow */
-    border: none; /* Remove border */
-    text-align: left; /* Align text to the left */
-    padding: 15px; /* Adjust padding */
-  }
-
-  .overlay {
-    position: static; /* Change position to static */
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
+    width: calc(100% - 20px);
+    margin: 0 10px 20px;
   }
 }
+@media (max-width: 768px) {
+  .product-list{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  }

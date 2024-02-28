@@ -7,6 +7,7 @@ const CategoryList = ({ categories, selectedCategory, onSelect }) => {
     <div className="category-list-container">
       <ul className="category-list">
         <p className="category-header">Categories</p>
+        <p className="category-list">Categories:</p>
         <li
           className={selectedCategory === "" ? "active" : ""}
           onClick={() => onSelect("")}
