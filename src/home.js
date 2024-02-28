@@ -3,6 +3,7 @@ import HeroSection from "./hero";
 import About from "./About";
 import Category from "./category";
 
+
 const Home = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Home = () => {
       <div className="explore-section">
         <About />
       </div>
+      
     </div>
   );
 };
