@@ -9,6 +9,11 @@
   padding-bottom: 1px; /* Add padding below the catalogue header */
   padding-top: 120px;
 }
+ul.card-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
 .catalogue-row {
   display: flex;
@@ -28,7 +33,7 @@
 
 .product-list li {
   background-color: #fff;
-  display: -ms-grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr); /* Background color */
   border: 1px solid #ddd;
   border-radius: 10px; /* Adjust border radius */
@@ -196,4 +201,5 @@
 .category-list li:hover {
   background-color: #ddd;
   color: #333;
+}
 }
