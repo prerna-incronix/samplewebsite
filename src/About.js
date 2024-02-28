@@ -25,10 +25,10 @@ const AboutUs = () => {
         <div className="mission-chashma-msg">
           <p>Transforming eyewear into vibrant expressions of identity</p>
 
-          <p>Uniting style with health and precision vision</p>
+          <p style={{ fontSize: '25px' }}>Uniting style with health and precision vision</p>
 
           <p>
-            Fostering a community where Indians proudly embrace their roots.
+             Fostering a community where Indians proudly embrace their roots.
           </p>
 
           <p>Providing all with bold and stylish confidence.</p>

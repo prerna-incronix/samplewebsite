@@ -506,6 +506,8 @@ category-section {
 .mission-chashma-msg p {
   width: 25vw;
   text-align: center;
+  font-size: 25px;
+  font-family: Raleway sans-serif;
   padding: 1.39vw 2.928vw;
   border-right: 1px solid #0000008a;
   letter-spacing: 0px;
@@ -523,6 +525,7 @@ category-section {
 .mission-chashma-msg p:last-child {
   border-right: unset;
   font-size: 25px;
+  font-family: Raleway sans-serif;
 }
 
 .mission-width-style {
