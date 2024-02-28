@@ -8,7 +8,7 @@ const SunglassCategoryList = ({ categories, onSelect }) => {
         <div className="category-list-container"> {/* Apply category-list-container class */}
         
             <ul className="category-list"> {/* Apply category-list class */}
-                
+            <p className="category-list">Categories:</p>
                 <li onClick={() => onSelect("")}>All</li>
                 {categories.map(category => (
                     <li key={category.id} onClick={() => onSelect(category.name)}>
