@@ -1,7 +1,7 @@
 // SunglassCategoryList.js
 import React from "react";
 import './assets/product.css'; // Import the CSS file
-import './assets/product.css'; // Import the CSS file
+
 
 const SunglassCategoryList = ({ categories, onSelect }) => {
     return (
@@ -22,4 +22,4 @@ const SunglassCategoryList = ({ categories, onSelect }) => {
     );
 }
 
-export default SunglassCategoryList;
+                export default SunglassCategoryList;
