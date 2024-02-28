@@ -1,3 +1,5 @@
+/* CategoryCatalogue.js */
+
 .catalogue-header {
   padding-bottom: 25px; /* Add padding below the catalogue header */
   padding-top: 120px;
@@ -205,14 +207,19 @@
 
 
 
-
-
 /* Responsive styles for screens with a maximum width of 325px */
 
 @media (max-width: 320px) {
 
+  .catalogue-header {
+    text-align: center;
+    margin-top: auto;
+  }
+
   .catalogue-row {
     justify-content: center; 
+    align-items: center;
+    text-align: center;
   }
 
   .catalogue-col-1, .catalogue-col-2 {
@@ -230,15 +237,10 @@
     border: none;
    
   }
-}
-/* Responsive styles */
-@media (max-width: 768px) {
+
   .category-list {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center;
     padding-left: 0; /* Remove left padding */
   }
 
@@ -277,6 +279,7 @@
     width: 100%; /* Full width */
     padding: 10px; /* Adjust padding */
   }
+
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -400,6 +403,58 @@
   }
 }
 
+@media (max-width: 576px) {
+  .category-list-container {
+    margin-left: auto; /* Adjust margin for smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    text-align: center; /* Center text */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .category-list li {
+    width: 100%; /* Adjust width to fit content */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .category-header {
+    display: none; /* Hide the category header in small screens */
+  }
+
+  .product-list {
+    margin-top: 200px;
+    margin-left: -10px; /* Adjust margin for smaller screens */
+    margin-right: -10px; /* Adjust margin for smaller screens */
+  }
+
+  .product-list li {
+    width: calc(100% - 20px); /* Full width with 20px margin on both sides for a single product in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center;
+  }
+  
+  .product-item img {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Allow the height to adjust automatically */
+    border-radius: 0; /* Remove border radius */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin-left: 70px;
+  }
+
+  .overlay {
+    position: static; /* Change position to static */
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
 @media (min-width: 426px) and (max-width: 768px){
   .catalogue-row {
     justify-content: center; 
@@ -478,12 +533,13 @@
   }
 
   .category-list-container {
-    margin-left: 10p0x; /* Auto margin for centering */
+    margin-left: -250px; /* Auto margin for centering */
     margin-right: auto; /* Auto margin for centering */
     width: 100%;
     border-radius: 0;
     box-shadow: none;
     border: none;
+    justify-content: center;
   }
 
   .category-list {
