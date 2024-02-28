@@ -100,7 +100,7 @@
   }
 
   .navbar__links a:hover {
-    background-color: #ff9100;
+    background-color: #066240;
     color: #333;
   }
 }
@@ -274,7 +274,7 @@
   display: block;
   width: 0;
   height: 3px;
-  background-color: rgb(255, 153, 0);
+  background-color: #ff9900;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -468,7 +468,7 @@ category-section {
   }
 
   .navbar__links a:hover {
-    background-color: #ff9100;
+    background-color: #8effd5;
     color: #333;
   }
 }
