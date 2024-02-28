@@ -2,7 +2,8 @@ import React from "react";
 import "./Footer.css";
 import GooglePlayBadge from "./assets/pngs/google-play-badge.png";
 import { Link } from "react-router-dom";
-import IncronixLogo from './assets/pngs/incronix.png';
+import IncronixLogo from "./assets/pngs/incronix.png";
+
 function Footer() {
   return (
     <>
@@ -14,8 +15,6 @@ function Footer() {
         <div className="container">
           {/* Polish logo */}
           <div className="footer-content">
-           
-
             <div className="footer-column">
               <h2>Useful Links</h2>
               <ul>
@@ -50,9 +49,6 @@ function Footer() {
                           d="M98.5 50c0-27.6-22.4-50-50-50S-2.5 22.4-2.5 50c0 25.7 18.9 47.1 43.5 51v-36.1H25.8V50H41V38.8c0-12.8 6.7-20.1 20-20.1 5.7 0 11.2.9 11.2.9v12.3h-6.3c-6.2 0-8.2 3.8-8.2 7.7V50h13.9l-2.2 14.9h-11.7V101c24.6-3.9 43.5-25.3 43.5-51z"
                         ></path>
                       </svg>
-
-
-
                     </a>
                     <div className="tooltip">Facebook</div>
                   </li>
@@ -108,15 +104,25 @@ function Footer() {
               </a>
             </div>
           </div>
-          <hr>
-          </hr>
+          <hr></hr>
           <div className="copyright-text">
-  COPYRIGHT 2024 | POLISH EYEWEAR |
-  {/* Replace the text with the Incronix logo image */}
-  <p>POWERED BY <a href="https://incronix.com/" className="highlight-link" target="_blank"><img src={IncronixLogo} alt="Incronix Logo" className="powered-by-logo" /></a></p>
-</div>
-
-
+            COPYRIGHT 2024 | POLISH EYEWEAR
+            {/* Replace the text with the Incronix logo image */}
+            <p>
+              POWERED BY{" "}
+              <a
+                href="https://incronix.com/"
+                className="highlight-link"
+                target="_blank"
+              >
+                <img
+                  src={IncronixLogo}
+                  alt="Incronix Logo"
+                  className="powered-by-logo"
+                />
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </>
