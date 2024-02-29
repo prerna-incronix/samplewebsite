@@ -1,23 +1,30 @@
-import React from "react";
+// categoryList.js
+import React, { useState } from "react";
 import "./assets/product.css";
 
-
 const CategoryList = ({ categories, selectedCategory, onSelect }) => {
+  const [activeCategory, setActiveCategory] = useState(""); // Set initial state to ""
+
+  const handleSelect = (categoryName) => {
+    setActiveCategory(categoryName);
+    onSelect(categoryName);
+  };
+
   return (
     <div className="category-list-container">
       <ul className="category-list">
         <p className="category-header">Categories :</p>
         <li
-          className={selectedCategory === "" ? "active" : ""}
-          onClick={() => onSelect("")}
+          className={activeCategory === "" ? "active" : ""}
+          onClick={() => handleSelect("")}
         >
           All
         </li>
         {categories.map((category) => (
           <li
             key={category.id}
-            className={selectedCategory === category.name ? "active" : ""}
-            onClick={() => onSelect(category.name)}
+            className={activeCategory === category.name ? "active" : ""}
+            onClick={() => handleSelect(category.name)}
           >
             {category.name}
           </li>
@@ -26,6 +33,5 @@ const CategoryList = ({ categories, selectedCategory, onSelect }) => {
     </div>
   );
 };
-
 
 export default CategoryList;
