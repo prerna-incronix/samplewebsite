@@ -205,10 +205,10 @@ ul {
 .copyright-text {
 text-align: center;
 margin-top: 20px; /* Adjust margin-top as needed */
-color: #5c5c5c;
+color: #5c5c5cad;
 }
 .highlight-link {
-color: rgb(17, 17, 17); /* Set the font color to black */
+color: rgba(17, 17, 17, 0.829); /* Set the font color to black */
 font-size: 20px; /* Reduce the font size */
 font-weight: 700; /* Increase font thickness */
 text-decoration: none; /* Remove underline */

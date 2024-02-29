@@ -106,22 +106,15 @@ function Footer() {
           </div>
           <hr></hr>
           <div className="copyright-text">
-            COPYRIGHT 2024 | POLISH EYEWEAR
-            {/* Replace the text with the Incronix logo image */}
-            <p>
-              POWERED BY{" "}
+            COPYRIGHT 2024 | POLISH EYEWEAR POWERED BY{" "}
               <a
                 href="https://incronix.com/"
                 className="highlight-link"
                 target="_blank"
               >
-                <img
-                  src={IncronixLogo}
-                  alt="Incronix Logo"
-                  className="powered-by-logo"
-                />
+                INCRONIX
               </a>
-            </p>
+            
           </div>
         </div>
       </footer>
