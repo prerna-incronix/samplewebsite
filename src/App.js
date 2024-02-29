@@ -15,25 +15,23 @@ import MainComponent from './maincomponent';
 import Aboutus from'./Aboutus';
 
 
+
 function App() {
   return (
     <div>
       <Navbar />
-     
-      
-      {
-        <Routes>
+       <Routes>
           <Route path="/" element={<Home />} />
-          {<Route path="/About" element={<Aboutus />} /> }
+          <Route path="/About" element={<Aboutus />} /> 
           <Route path="/home" element={<Home />} />
-           <Route path='/CategoryCatalogue' element={<CategoryCatalogue />} />
+          <Route path='/CategoryCatalogue' element={<CategoryCatalogue />} />
           <Route path='/SunglassCatalogue' element={<SunglassCatalogue />} /> 
           {/* <Route path="/" element={<About />} /> */}
           {/* <Route path='/' element={< E />} />
         <Route path='/' element={<S />} /> */}
         
       </Routes> 
-      }
+      
       <Footer />
     </div>
   );
