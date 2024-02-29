@@ -1,7 +1,7 @@
 .fade-in-left {
     opacity: 0;
-    transform: translateX(-20px); /* Initial position off-screen to the left */
-    transition: opacity 1.0s ease, transform 2.0s ease;
+    transform: translateX(-100px); /* Initial position off-screen to the left */
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.0s;
   }
   
   .visible {
