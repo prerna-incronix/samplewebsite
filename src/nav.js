@@ -12,6 +12,12 @@ const Navbar = () => {
   
   const location = useLocation();
   const isHomePage = location.pathname === "/home";
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   return (
     <nav className="navbar">
@@ -31,24 +37,24 @@ const Navbar = () => {
       {/* Right section for links */}
       <ul className="navbar__links">
         <li>
-          <NavLink exact to="/home" activeClassName="active">
+          <NavLink exact to="/home" activeClassName="active" onClick={scrollToTop}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/CategoryCatalogue" activeClassName="active">
+          <NavLink to="/CategoryCatalogue" activeClassName="active" onClick={scrollToTop}>
             Eyewear
           </NavLink>
         </li>
         <li>
-          <NavLink to="/SunglassCatalogue" activeClassName="active">
+          <NavLink to="/SunglassCatalogue" activeClassName="active" onClick={scrollToTop}>
             Sunglasses
           </NavLink>
         </li>
         <li>
           {/* Conditionally render ScrollLink based on whether it's the home page */}
           
-            <NavLink to="/About">
+            <NavLink to="/About" onClick={scrollToTop}>
               About
             </NavLink>
          
