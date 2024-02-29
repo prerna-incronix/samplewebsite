@@ -13,7 +13,7 @@ const AboutUs = () => {
                 <p>Polish Eyewear sun wear showcases captivating designs ranging from the classic aviator to the trendy retro and the snug fit wrap around. The high quality polarized lenses offer 100% UV protection and glare free vision.</p>
             </div>
             <div className="vision-section">
-                <h2>OUR VISSION</h2>
+                <h2>OUR VISION</h2>
                 <p>We believe ‘it's all about you, your vibe, your tribe, your energy & your panache’. You are special and you deserve the best in eyewear; and what you choose at ‘mercurii’ becomes your style.</p>
             </div>
             <div className="vision-section">
