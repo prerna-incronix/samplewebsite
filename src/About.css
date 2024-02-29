@@ -1,7 +1,7 @@
 /* AboutUs.css */
 
 body {
-    font-family: 'Lora', serif; /* Apply Lora font family to the entire page */
+    font-family: 'Raleway', sans-serif; /* Apply Lora font family to the entire page */
 }
 
 .gradient-bg {
@@ -43,6 +43,7 @@ body {
 
 .about-section h1 {
     font-size: 36px;
+    font-family: 'Raleway', sans-serif;
     color: #333;
     margin-top: 50px;
     margin-bottom: 20px; /* Add margin below heading */
@@ -50,6 +51,7 @@ body {
 
 .about-section p {
     font-size: 16px;
+    font-family: 'Raleway', sans-serif;
     color: #666;
     margin-bottom: 15px;
     line-height: 2.5; /* Add line height for better readability */
@@ -58,6 +60,7 @@ body {
 .vision-section {
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 100;
     color: black; 
     opacity: 0; /* Set initial opacity to 0 */
@@ -73,6 +76,7 @@ body {
 
 .vision-section p {
     font-size: 16px;
+    font-family: 'Raleway', sans-serif;
     color: #666;
     margin-bottom: 15px;
     line-height: 2.5; /* Add line height for better readability */
