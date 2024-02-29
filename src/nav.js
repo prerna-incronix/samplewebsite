@@ -48,7 +48,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/SunglassCatalogue" activeClassName="active" onClick={scrollToTop}>
-            Sunglasses
+            Sunglass
           </NavLink>
         </li>
         <li>
