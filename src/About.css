@@ -67,6 +67,7 @@ body {
 .vision-section h2 {
     font-size: 24px;
     color: #333;
+    line-height: 2.5;
     margin-bottom: 20px;
 }
 
@@ -74,7 +75,7 @@ body {
     font-size: 16px;
     color: #666;
     margin-bottom: 15px;
-    line-height: 1.5; /* Add line height for better readability */
+    line-height: 2.5; /* Add line height for better readability */
 }
 
 /* Keyframes for fade-in animation */
