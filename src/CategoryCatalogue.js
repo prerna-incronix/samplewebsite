@@ -8,6 +8,7 @@ import './assets/product.css';
 
 const CategoryCatalogue = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
+    
 
     const handleSelectCategory = (categoryName) => {
         setSelectedCategory(categoryName);
