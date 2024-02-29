@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,68 +27,66 @@
 }
 
 /* Footer Section */
-/* Footer Section */
 #footer {
-background-color: #f7f7f7;
-padding: 50px 0;
-padding-bottom: 20px;
-padding-left: 10vh;
-padding-right: 10vh;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  padding-bottom: 20px;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
 
 .container {
-max-width: 1200px;
-margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-content {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 84px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 84px;
 }
 
 .footer-column {
-width: fit-content;
-padding: 0 15px;
-margin-bottom: 30px;
+  width: fit-content;
+  padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .footer-column h2 {
-color: #333;
-font-size: 20px;
-margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-column p {
-color: #666;
-line-height: 1.6;
+  color: #666;
+  line-height: 1.6;
 }
 
 .footer-column ul {
-list-style: none;
-padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-column ul li {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-column a {
-color: #666;
-text-decoration: none;
-transition: color 0.3s ease;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-color: #333;
+  color: #333;
 }
 
 /* Add hover effect on the Useful Links */
 .footer-column ul li a:hover {
-color: #007bff; /* Change to desired hover color */
+  color: #007bff; /* Change to desired hover color */
 }
-
 
 /* Social Icons */
 .social-icons {
@@ -102,16 +101,17 @@ color: #007bff; /* Change to desired hover color */
   color: #666;
   text-decoration: none;
   transition: color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
 
 .social-icons a:hover {
   color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add glow effect on hover */
 }
 
 .social-icons i {
   margin-right: 5px;
 }
-
 
 ul {
   list-style: none;
@@ -202,18 +202,21 @@ ul {
 .google-play-badge:hover {
   transform: scale(1.1); /* Zoom effect on hover */
 }
+
 /* CSS for centering the copyright text */
 .copyright-text {
-text-align: center;
-margin-top: 20px; /* Adjust margin-top as needed */
-color: #5c5c5cad;
+  text-align: center;
+  margin-top: 20px; /* Adjust margin-top as needed */
+  color: #5c5c5cad;
 }
+
 .highlight-link {
-color: rgba(17, 17, 17, 0.829); /* Set the font color to black */
-font-size: 20px; /* Reduce the font size */
-font-weight: 700; /* Increase font thickness */
-text-decoration: none; /* Remove underline */
+  color: rgba(17, 17, 17, 0.829); /* Set the font color to black */
+  font-size: 20px; /* Reduce the font size */
+  font-weight: 700; /* Increase font thickness */
+  text-decoration: none; /* Remove underline */
 }
+
 
 
 
