@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 import IncronixLogo from "./assets/pngs/incronix.png";
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <>
       <footer id="footer">
@@ -19,16 +26,16 @@ function Footer() {
               <h2>Useful Links</h2>
               <ul>
                 <li>
-                  <Link to="/home">Home</Link>
+                  <Link to="/home" onClick={scrollToTop}>Home</Link>
                 </li>
                 <li>
-                  <Link to="/CategoryCatalogue">Eyewear</Link>
+                  <Link to="/CategoryCatalogue" onClick={scrollToTop}>Eyewear</Link>
                 </li>
                 <li>
-                  <Link to="/SunglassCatalogue">Sunglass</Link>
+                  <Link to="/SunglassCatalogue" onClick={scrollToTop}>Sunglass</Link>
                 </li>
                 <li>
-                  <Link to="/About">Explore Us</Link>
+                  <Link to="/About" onClick={scrollToTop}>About</Link>
                 </li>
               </ul>
             </div>
@@ -106,22 +113,15 @@ function Footer() {
           </div>
           <hr></hr>
           <div className="copyright-text">
-            COPYRIGHT 2024 | POLISH EYEWEAR
-            {/* Replace the text with the Incronix logo image */}
-            <p>
-              POWERED BY{" "}
+            COPYRIGHT 2024 | POLISH EYEWEAR POWERED BY{" "}
               <a
                 href="https://incronix.com/"
                 className="highlight-link"
                 target="_blank"
               >
-                <img
-                  src={IncronixLogo}
-                  alt="Incronix Logo"
-                  className="powered-by-logo"
-                />
+                INCRONIX
               </a>
-            </p>
+            
           </div>
         </div>
       </footer>

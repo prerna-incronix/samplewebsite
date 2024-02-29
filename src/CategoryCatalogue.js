@@ -8,6 +8,7 @@ import './assets/product.css';
 
 const CategoryCatalogue = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
+    
 
     const handleSelectCategory = (categoryName) => {
         setSelectedCategory(categoryName);
@@ -15,12 +16,15 @@ const CategoryCatalogue = () => {
 
     return (
         <div>
-            <div className="catalogue-header"><h1>Eyewear</h1></div>
+            <div class="title-container">
+                <h1 class="animated-title">Eyewear</h1>
+                <div class="glasses-animation"></div>
+            </div>
             <div className="catalogue-container">
                 <div className="catalogue-row">
                     <div className="catalogue-col-1">
                         <CategoryList categories={categories} onSelect={handleSelectCategory} />
-                    </div>    
+                    </div>
                     <div className="catalogue-col-2">
                         <ProductList selectedCategory={selectedCategory} />
                     </div>

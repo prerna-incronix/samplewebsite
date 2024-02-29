@@ -14,8 +14,9 @@ const SunglassCategoryCatalogue = () => {
 
   return (
     <div>
-      <div className="catalogue-header">
-        <h1>Sunglasses</h1>
+      <div class="title-container">
+        <h1 class="animated-title-sunglass">Sunglasses</h1>
+        <div class="glasses-animation-sunglass"></div>
       </div>
       <div className="catalogue-container">
         <div className="catalogue-row">
