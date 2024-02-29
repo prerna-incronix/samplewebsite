@@ -15,7 +15,7 @@ const CategoryCatalogue = () => {
     };
 
     return (
-        <div className="gradient-bg">
+        <div> 
             <div className="title-container">
                 <h1 className="animated-title">Eyewear</h1>
                 <div className="glasses-animation"></div>

@@ -13,7 +13,7 @@ const SunglassCategoryCatalogue = () => {
   };
 
   return (
-    <div className="gradient-bg">
+    <div>
       <div class="title-container">
         <h1 class="animated-title-sunglass">Sunglasses</h1>
         <div class="glasses-animation-sunglass"></div>
