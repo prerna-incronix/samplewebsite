@@ -75,6 +75,17 @@
   background-color: transparent;
   border: none;
   transition: background-color 0.3s, color 0.3s;
+  
+}
+
+.category-list li.active {
+  background-color: #076142;
+  color: #fff;
+}
+
+.category-list li:hover {
+  background-color: #ddd;
+  color: #333;
 }
 
 @media (max-width: 768px) {
