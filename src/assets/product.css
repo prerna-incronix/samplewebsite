@@ -158,8 +158,8 @@
 }
 
 .category-list li:hover {
-  background-color: #ddd;
-  color: #333;
+  background-color: #076142;
+  color: #ffffff;
 }
 
 .category-list li.active {
