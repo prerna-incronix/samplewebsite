@@ -2,7 +2,7 @@ import React from "react";
 import "./assets/styles.css";
 import img from "./assets/pngs/Explorenew2.png"; // Import your CSS file for styling
 
-const AboutUs = () => {
+const About = () => {
   return (
     <>
       <div className="mission-chashma-imgmsgs mission-chashma-template--21826586313000__072f6d2f-6d43-4e93-89a6-d8f2dc4d26b5">
@@ -184,4 +184,4 @@ const AboutUs = () => {
             
 
 
-export default AboutUs;
+export default About;
