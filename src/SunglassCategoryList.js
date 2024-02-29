@@ -1,25 +1,37 @@
 // SunglassCategoryList.js
-import React from "react";
-import './assets/product.css'; // Import the CSS file
-
+import React, { useState } from "react";
+import "./assets/product.css";
 
 const SunglassCategoryList = ({ categories, onSelect }) => {
-    return (
-        <div className="category-list-container"> {/* Apply category-list-container class */}
-        
-            <ul className="category-list"> {/* Apply category-list class */}
-            <p className="category-header">Categories:</p>
-                <li onClick={() => onSelect("")}>All</li>
-                {categories.map(category => (
-                    <li key={category.id} onClick={() => onSelect(category.name)}>
-                        {category.name}
-                   
-                    </li>
-                ))}
-            </ul> 
-             
-        </div>
-    );
-}
+  const [activeCategory, setActiveCategory] = useState("");
 
-                export default SunglassCategoryList;
+  const handleSelect = (categoryName) => {
+    setActiveCategory(categoryName);
+    onSelect(categoryName);
+  };
+
+  return (
+    <div className="category-list-container">
+      <ul className="category-list">
+        <p className="category-header">Categories:</p>
+        <li
+          className={activeCategory === "" ? "active" : ""}
+          onClick={() => handleSelect("")}
+        >
+          All
+        </li>
+        {categories.map((category) => (
+          <li
+            key={category.id}
+            className={activeCategory === category.name ? "active" : ""}
+            onClick={() => handleSelect(category.name)}
+          >
+            {category.name}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default SunglassCategoryList;

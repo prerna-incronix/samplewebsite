@@ -47,22 +47,11 @@ const Navbar = () => {
         </li>
         <li>
           {/* Conditionally render ScrollLink based on whether it's the home page */}
-          {isHomePage ? (
-            <ScrollLink
-              to="explore-section"
-              spy={true}
-              smooth={true}
-              duration={500}
-              style={{ cursor: "pointer" }}
-              className="scroll-link"
-            >
-              About
-            </ScrollLink>
-          ) : (
+          
             <NavLink to="/About">
-              AboutUs
+              About
             </NavLink>
-          )}
+         
         </li>
       </ul>
     </nav>
