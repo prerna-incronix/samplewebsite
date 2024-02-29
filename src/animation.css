@@ -1,0 +1,11 @@
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px); /* Initial position off-screen to the left */
+    transition: opacity 1.0s ease, transform 2.0s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+  }
+  
