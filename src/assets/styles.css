@@ -620,7 +620,8 @@ category-section {
 @media (max-width: 375px) {
   .cashma-img-mission {
     width: 68%;
-    margin-left: 5px; /* Adjust margin as needed */
+    margin-left: 5px;
+    margin-right: 70px;/* Adjust margin as needed */
     height: auto;
     object-fit: cover;
     margin-bottom: -32px;
@@ -642,7 +643,8 @@ category-section {
 @media (max-width: 760px) {
   .cashma-img-mission {
     width: 68%;
-    margin-left: 70px; /* Adjust margin as needed */
+    margin: 0 auto;
+    margin-left: 20px;/* Adjust margin as needed */
     height: auto;
     object-fit: cover;
     margin-bottom: -32px;
