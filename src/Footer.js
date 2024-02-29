@@ -28,7 +28,7 @@ function Footer() {
                   <Link to="/SunglassCatalogue">Sunglass</Link>
                 </li>
                 <li>
-                  <Link to="/About">Explore Us</Link>
+                  <Link to="/About">About</Link>
                 </li>
               </ul>
             </div>
