@@ -13,7 +13,7 @@ const AboutUs = () => {
                 <p>The sunwear collection from Polish Eyewear presents enchanting designs spanning from timeless aviators to fashionable retros and snug-fitting wraparounds. With top-tier polarized lenses, we ensure not only 100% UV protection but also glare-free vision for a superior visual experience.</p>
             </div>
             <div className="vision-section">
-                <h2>OUR VISSION</h2>
+                <h2>OUR VISION</h2>
                 <p>We stand by the philosophy that "it's all about you—your essence, your community, your vitality, and your flair." Each individual is unique and deserves the finest eyewear; what you opt for at 'Polish Eyewear' truly defines your personal style.
                 </p>
             </div>
