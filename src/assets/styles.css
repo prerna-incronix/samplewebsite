@@ -468,7 +468,7 @@ category-section {
   }
 
   .navbar__links a:hover {
-    background-color: #8effd5;
+    background-color: whitesmoke;
     color: #333;
   }
 }

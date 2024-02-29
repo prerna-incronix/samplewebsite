@@ -1,7 +1,7 @@
 // AboutUs.js
 import React from 'react';
 import './About.css';
-import img1 from'./assets/pngs/focus.png'
+import img1 from './assets/pngs/focus.png'
 
 const AboutUs = () => {
     return (
