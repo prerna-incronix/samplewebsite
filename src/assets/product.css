@@ -88,6 +88,13 @@
   color: #333;
 }
 
+.category-list li.active {
+  color: #ffffff; /* Optionally change text color to white for better contrast */
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+
 @media (max-width: 768px) {
   .category-list-container {
     position: absolute;
