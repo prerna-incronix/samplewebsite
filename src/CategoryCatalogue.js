@@ -14,10 +14,10 @@ const CategoryCatalogue = () => {
     };
 
     return (
-        <div>
-            <div class="title-container">
-                <h1 class="animated-title">Eyewear</h1>
-                <div class="glasses-animation"></div>
+        <div className="gradient-bg">
+            <div className="title-container">
+                <h1 className="animated-title">Eyewear</h1>
+                <div className="glasses-animation"></div>
             </div>
             <div className="catalogue-container">
                 <div className="catalogue-row">
