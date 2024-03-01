@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* Conditionally render ScrollLink based on whether it's the home page */}
           
             <NavLink to="/About" onClick={scrollToTop}>
-              About
+              About-Us
             </NavLink>
          
         </li>
