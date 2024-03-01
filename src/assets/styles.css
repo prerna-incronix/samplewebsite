@@ -425,7 +425,7 @@ category-section {
     /* Stack items vertically */
     align-items: flex-start;
     /* Align items to the start */
-    padding: 5px;
+    padding: 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
