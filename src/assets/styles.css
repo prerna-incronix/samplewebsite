@@ -1242,8 +1242,8 @@ category-section {
 
 .category-tile {
   position: relative;
-  width: 250px; /* Adjusted width */
-  height: 400px; /* Adjusted height */
+  width: 325px; /* Adjusted width */
+  height: 450px; /* Adjusted height */
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
@@ -1253,8 +1253,9 @@ category-section {
 
 
 .category-tile:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05); /* Zoom in effect */
 }
+
 
 .category-link {
   text-decoration: none;
