@@ -140,7 +140,11 @@
     }
   
     .model-no-label {
-        font-size: 16px; /* Reduce font size for smaller screens */
+        font-size: 13px; /* Reduce font size for smaller screens */
+    }
+
+    .model-no {
+        font-size: 13px; /* Reduce font size for smaller screens */
     }
 }
-  
+   
