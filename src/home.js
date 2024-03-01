@@ -3,6 +3,7 @@ import HeroSection from "./hero";
 import About from "./About";
 import Category from "./category";
 import './animation.css';
+import Navbar2 from "./nav2";
 
 const Home = () => {
   useEffect(() => {
@@ -34,6 +35,9 @@ const Home = () => {
 
   return (
     <div>
+      <div>
+        <Navbar2 />
+      </div>
       <div className="hero-section fade-in-left">
         <HeroSection />
       </div>
