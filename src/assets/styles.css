@@ -7,12 +7,13 @@
 .navbar__links {
   list-style-type: none;
   display: flex;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: large;
 }
 
 .navbar__links li {
-  margin-right: 24px; /* Adjust spacing between links */
+  margin-right: 24px;
+  font-family: 'Playfair Display', serif; /* Adjust spacing between links */
 }
 
 .navbar__links li:last-child {
@@ -23,6 +24,7 @@
   color: rgb(48, 48, 48);
   text-decoration: none;
   position: relative;
+  font-family: 'Playfair Display', serif;
 }
 
 .navbar__links a::after {
@@ -390,6 +392,7 @@ category-section {
   margin: 0;
   font-size: 1.5em;
   color: #333;
+  font-family: 'Noto Serif, serif'
 }
 
 /* ProductList.js */
@@ -779,7 +782,7 @@ category-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.415vw;   
+  gap: 8.415vw;   
 }
 
 .special-our-heading_style h2 {
@@ -1224,8 +1227,8 @@ category-section {
 
 .category-tile {
   position: relative;
-  width: 350px;
-  height: 500px;
+  width: 325px; /* Adjusted width */
+  height: 450px; /* Adjusted height */
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
@@ -1233,9 +1236,11 @@ category-section {
   transition: transform 0.3s;
 }
 
+
 .category-tile:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05); /* Zoom in effect */
 }
+
 
 .category-link {
   text-decoration: none;

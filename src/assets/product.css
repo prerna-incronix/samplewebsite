@@ -8,7 +8,10 @@
 }
 
 .animated-title {
-  font-size: 3.1em;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.8em;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -27,6 +30,9 @@
 }
 
 .animated-title-sunglass{
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
   font-size: 2.8em;
   color: #fff;
   position: relative;
@@ -116,10 +122,11 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  font-family: 'Raleway', sans-serif;
   padding: 10px;
-  font-weight: bold;
-  font-size: larger;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .category-list li {
@@ -129,7 +136,10 @@
   background-color: transparent;
   border: none;
   transition: background-color 0.3s, color 0.3s;
-  
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .category-list li.active {
@@ -186,7 +196,49 @@
   }
 }
 
+@media (max-width: 767px) {
+  .category-list-container {
+    margin: 0 auto; /* Center the category list */
+    width: 80%; /* Adjust width for smaller screens */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+    background-color: transparent;
+  }
 
+  .category-list {
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .category-list li {
+    width: 100%; /* Adjust width to fit content */
+    padding: 10px 0; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+  }
+
+  .category-header {
+    display: none; /* Hide the category header in small screens */
+  }
+
+  .product-list {
+    margin-top: 200px; /* Adjust margin for smaller screens */
+    margin-left: -10px; /* Adjust margin for smaller screens */
+    margin-right: -10px; /* Adjust margin for smaller screens */
+    justify-content: center; /* Center products horizontally */
+  }
+
+  .product-list li {
+    width: calc(100% - 20px); /* Full width with 20px margin on both sides for a single product in a row */
+    margin: 0 10px 20px; /* Margin around each product item */
+    justify-content: center; /* Center products horizontally */
+  }
+}
 
 /* ProductList.js */
 
