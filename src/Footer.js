@@ -35,7 +35,7 @@ function Footer() {
                   <Link to="/SunglassCatalogue" onClick={scrollToTop}>Sunglass</Link>
                 </li>
                 <li>
-                  <Link to="/About" onClick={scrollToTop}>About-Us</Link>
+                  <Link to="/About" onClick={scrollToTop}>About</Link>
                 </li>
               </ul>
             </div>
