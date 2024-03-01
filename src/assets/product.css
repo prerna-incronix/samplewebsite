@@ -436,12 +436,12 @@
   }
 }
 
-@media (width: 430px){
+/* @media (width: 430px){
   .category-list-container {
     margin-left: -60px !important;
     width: 50% !important;
   }
-}
+} */
 
 @media (width: 540px){
   .category-list-container {
@@ -513,6 +513,13 @@
     position: static; /* Change position to static */
     width: 100%; /* Full width */
     padding: 10px; /* Adjust padding */
+  }
+}
+
+@media (min-width: 426px) and (max-width: 576px){
+  .category-list-container{
+    margin-left: -100px !important;
+    width: 60% !important;
   }
 }
 
