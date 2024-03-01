@@ -203,7 +203,7 @@
 
 .navbar__logo {
   color: transparent; /* Initial color set to transparent */
-  background-image: linear-gradient(to right, indigo,rgb(207, 2, 88)); /* Gradient background */
+  background-image: linear-gradient(to right, indigo, red); /* Gradient background */
   background-clip: text; /* Clip the background to the text */
   -webkit-background-clip: text; /* For Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Hide the text color */
