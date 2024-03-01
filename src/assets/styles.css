@@ -1,20 +1,5 @@
 /* Navbar */
 
-.navbar {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
-  color: rgb(48, 48, 48);
-  padding-left: 48px;
-  padding-right: 48px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
 .navbar__logo img {
   width: 150px; 
 }
@@ -205,7 +190,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
   color: rgb(48, 48, 48);
   padding-left: 48px;
@@ -216,26 +201,26 @@
 
 .navbar__logo {
   color: transparent; /* Initial color set to transparent */
-  background-image: linear-gradient(to right, indigo,red); /* Gradient background */
+  background-image: linear-gradient(to right, indigo,rgb(207, 2, 88)); /* Gradient background */
   background-clip: text; /* Clip the background to the text */
   -webkit-background-clip: text; /* For Safari/Chrome */
   -webkit-text-fill-color: transparent; /* Hide the text color */
-  animation: fillIn 5s forwards; 
+  animation: fillIn 5s forwards infinite; 
   text-align: center;
 }
 
-.navbar__logo span {
-  letter-spacing: 5px; /* Adjust the letter spacing as needed */
-}
 
 #polishText {
   font-family: 'Zebulon', sans-serif;
   font-size: 24px;
+  letter-spacing: 5px;
 }
 
 #eyewearText {
   font-family: 'Mundo', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 @keyframes fillIn {
@@ -276,7 +261,7 @@
   height: 3px;
   background-color: #ff9900;
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 0;
   transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
   opacity: 0;
