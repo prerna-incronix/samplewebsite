@@ -34,7 +34,7 @@ function Category() {
               className="category-tile-img"
             />
             <div className="category-tile-overlay">
-              <h3>Sunglasses</h3>
+              <h3>Sunglass</h3>
             </div>
           </div>
         </Link>
