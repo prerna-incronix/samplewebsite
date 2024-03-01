@@ -212,7 +212,7 @@ ul {
 
 .highlight-link {
   color: rgba(17, 17, 17, 0.829); /* Set the font color to black */
-  font-size: 18px; /* Reduce the font size */
+  font-size: 19px; /* Reduce the font size */
   font-weight: 700; /* Increase font thickness */
   text-decoration: none; /* Remove underline */
 }
