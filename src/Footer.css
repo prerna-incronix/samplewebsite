@@ -217,9 +217,6 @@ ul {
   text-decoration: none; /* Remove underline */
 }
 
-
-
-
 @media (max-width: 786px) {
   .container {
     flex-direction: column;
