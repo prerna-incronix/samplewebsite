@@ -1242,14 +1242,15 @@ category-section {
 
 .category-tile {
   position: relative;
-  width: 350px;
-  height: 500px;
+  width: 250px; /* Adjusted width */
+  height: 400px; /* Adjusted height */
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
+
 
 .category-tile:hover {
   transform: translateY(-10px);
