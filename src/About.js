@@ -23,14 +23,14 @@ const About = () => {
         <div className="gap"></div>
 
         <div className="mission-chashma-msg">
-          <p>Transforming eyewear into vibrant expressions of identity</p>
+          <p>Elevating eyewear to reflect the unique essence of Polish culture and identity</p>
 
-          <p style={{ fontSize: '25px' }}>Uniting style with health and precision vision</p>
+          <p style={{ fontSize: '25px' }}>Harmonizing sophisticated style with uncompromising eye care and precision vision</p>
 
-          <p style={{ fontSize: '25px' }}>Fostering a community where Indians proudly embrace their roots</p>
+          <p style={{ fontSize: '25px' }}>Crafting eyewear that embodies Polish heritage and modern elegance.</p>
           
 
-          <p>Providing all with bold and stylish confidence.</p>
+          <p>Infusing Polish heritage into contemporary eyewear designs.</p>
         </div>
       </div>
 
