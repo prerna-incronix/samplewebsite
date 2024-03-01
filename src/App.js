@@ -13,7 +13,6 @@ import CategoryCatalogue from './CategoryCatalogue';
 import SunglassCatalogue from './SunglassCatalogue';
 import MainComponent from './maincomponent';
 import Aboutus from'./Aboutus';
-import Navbar2 from "./nav2";
 
 
 
