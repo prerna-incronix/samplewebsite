@@ -206,7 +206,7 @@ ul {
 /* CSS for centering the copyright text */
 .copyright-text {
   text-align: center;
-  margin-top: 16px; /* Adjust margin-top as needed */
+  margin-top: 10px; /* Adjust margin-top as needed */
   color: #5c5c5cad;
 }
 
@@ -267,7 +267,7 @@ ul {
 
   .copyright-text {
     margin-bottom: 32px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .highlight-link {
