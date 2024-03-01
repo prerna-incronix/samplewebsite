@@ -268,9 +268,13 @@
     width: 150px;
   }
 
+  .glasses-animation-sunglass{
+    width: 150px;
+  }
+
   .catalogue-header {
     text-align: center;
-    margin-top: auto;
+    margin-top: auto;       
   }
 
   .catalogue-row {
@@ -353,6 +357,10 @@
     width: 150px;
   }
 
+  .glasses-animation-sunglass{
+    width: 150px;
+  }
+
   .catalogue-row {
     justify-content: center; 
   }
@@ -379,6 +387,10 @@
   }
 
   .glasses-animation {
+    width: 150px;
+  }
+
+  .glasses-animation-sunglass{
     width: 150px;
   }
 
@@ -463,6 +475,10 @@
     width: 150px;
   }
 
+  .glasses-animation-sunglass{
+    width: 150px;
+  }
+
   .category-list-container {
     margin-top: 10px !important;
     margin-left: 10px; /* Adjust margin for smaller screens */
@@ -535,6 +551,11 @@
   .glasses-animation {
     width: 200px;
   }
+
+  .glasses-animation-sunglass{
+    width: 200px;
+  }
+
   .catalogue-row {
     justify-content: center; 
   }
