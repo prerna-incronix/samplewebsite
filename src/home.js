@@ -34,6 +34,12 @@ const Home = () => {
 
   return (
     <div>
+      <div className="top-middle">
+        <ul>
+          <li><span id="polishText">POLISH</span></li>
+          <li><span id="eyewearText">Eyewear</span></li>
+        </ul>
+      </div>
       <div className="hero-section fade-in-left">
         <HeroSection />
       </div>

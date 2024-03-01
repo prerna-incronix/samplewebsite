@@ -59,7 +59,7 @@ const HeroSection = () => {
         ))}
       </Carousel>
       {/* Styling for the overlay */}
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
       {/* Styling for the arrow controls */}
       <div className="arrow-controls">
         <button className="control-arrow control-prev" onClick={() => setCurrentSlide(currentSlide - 1)} />
