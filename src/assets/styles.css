@@ -13,7 +13,7 @@
 
 .navbar__links li {
   margin-right: 24px;
-  font-family: 'Playfair Display', serif; /* Adjust spacing between links */
+  font-family: 'Marcellus', serif; /* Adjust spacing between links */
 }
 
 .navbar__links li:last-child {
@@ -24,7 +24,8 @@
   color: rgb(48, 48, 48);
   text-decoration: none;
   position: relative;
-  font-family: 'Playfair Display', serif;
+  font-family: 'marcellus', serif;
+  font-weight: 525;
 }
 
 .navbar__links a::after {
