@@ -333,13 +333,11 @@
     height: auto; /* Allow the height to adjust automatically */
     border-radius: 0; /* Remove border radius */
     object-fit: cover; /* Ensure the image covers the container */
-    margin-left: 70px;
+    justify-content: center;
   }
 
   .overlay {
-    position: static; /* Change position to static */
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
+    display: none;
   }
 
 }
@@ -445,6 +443,7 @@
 
   .product-item img {
     margin-left: 0; /* Reset left margin */
+    justify-content: center;
   }
 }
 
@@ -522,13 +521,12 @@
     height: auto; /* Allow the height to adjust automatically */
     border-radius: 0; /* Remove border radius */
     object-fit: cover; /* Ensure the image covers the container */
-    margin-left: 70px;
+    
+    justify-content: center;
   }
 
   .overlay {
-    position: static; /* Change position to static */
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
+    display: none;
   }
 }
 
@@ -615,13 +613,11 @@
     height: auto; /* Allow the height to adjust automatically */
     border-radius: 0; /* Remove border radius */
     object-fit: cover; /* Ensure the image covers the container */
-    margin-left: 100px; /* Adjust margin */
+    justify-content: center;
   }
 
   .overlay {
-    position: static; /* Change position to static */
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
+    display: none;
   }
 }
 
@@ -680,13 +676,11 @@
     height: auto; /* Allow the height to adjust automatically */
     border-radius: 0; /* Remove border radius */
     object-fit: cover; /* Ensure the image covers the container */
-    margin-left: 100px; /* Adjust margin */
+    justify-content: center;
   }
 
   .overlay {
-    position: static; /* Change position to static */
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
+    display: none;
   }
 }
 

@@ -61,10 +61,10 @@ const HeroSection = () => {
       {/* Styling for the overlay */}
       {/* <div className="overlay"></div> */}
       {/* Styling for the arrow controls */}
-      <div className="arrow-controls">
+      {/* <div className="arrow-controls">
         <button className="control-arrow control-prev" onClick={() => setCurrentSlide(currentSlide - 1)} />
         <button className="control-arrow control-next" onClick={() => setCurrentSlide(currentSlide + 1)} />
-      </div>
+      </div> */}
     </div>
   );
 };
