@@ -432,7 +432,7 @@
   .navbar__links {
     justify-content: space-between;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #f0f0f0;
   }
 
