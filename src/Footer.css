@@ -164,7 +164,7 @@ ul {
 
 .example-1 .icon-content .link svg {
   width: 50px;
-  height: 10px;
+  height: 40px;
 }
 
 .example-1 .icon-content .link[data-social="spotify"]:hover {
