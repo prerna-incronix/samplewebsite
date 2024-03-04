@@ -99,12 +99,12 @@
   color: #666;
   text-decoration: none;
   transition: color 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  background-color: transparent; /* Set background color to transparent */
+  border: none; /* Remove border */
 }
 
 .social-icons a:hover {
   color: #333;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add glow effect on hover */
 }
 
 .social-icons i {
@@ -153,14 +153,10 @@ ul {
   align-items: center;
   width: 35px; /* Adjust width to match SVG icon width */
   height: 35px; /* Adjust height to match SVG icon height */
-  border-radius: 60%; /* Make it fully rounded */
+  border-radius: 50%; /* Make it fully rounded */
   color: #4d4d4d;
-  opacity: 1;
-  background-color: transparent; /* Set background color to transparent */
   transition: all 0.3s ease-in-out;
 }
-
-
 
 .example-1 .icon-content .link:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
@@ -168,7 +164,7 @@ ul {
 
 .example-1 .icon-content .link svg {
   width: 50px;
-  height: 50px;
+  height: 40px;
 }
 
 .example-1 .icon-content .link[data-social="spotify"]:hover {
@@ -186,6 +182,7 @@ ul {
 .example-1 .icon-content .link[data-social="telegram"]:hover {
   color: #0088cc;
 }
+
 
 /* Footer.css */
 
