@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import GooglePlayBadge from "./assets/pngs/google-play-badge.png";
+import IncronixFooterLogo from "./assets/pngs/incronix.png";
 import { Link } from "react-router-dom";
 import IncronixLogo from "./assets/pngs/incronix.png";
 
@@ -35,7 +36,7 @@ function Footer() {
                   <Link to="/SunglassCatalogue" onClick={scrollToTop}>Sunglass</Link>
                 </li>
                 <li>
-                  <Link to="/About" onClick={scrollToTop}>About-Us</Link>
+                  <Link to="/About" onClick={scrollToTop}>About</Link>
                 </li>
               </ul>
             </div>
@@ -85,7 +86,7 @@ function Footer() {
                 
               </div>
             </div>
-
+            
             {/* Google Play badge */}
             <div className="google-play-badge">
               <a href="https://play.google.com/store">
@@ -101,7 +102,7 @@ function Footer() {
                 className="highlight-link"
                 target="_blank"
               >
-                INCRONIX
+                <img src={IncronixFooterLogo} alt = "Incronix" className="powered-by-logo"/>
               </a>
             
           </div>
