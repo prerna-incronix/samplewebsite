@@ -49,7 +49,8 @@ function Footer() {
                       className="link"
                       data-social="telegram"
                       aria-label="Facebook"
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/profile.php?id=61553292098936&mibextid=YMEMSu"
+                      target="_blank"
                     >
                       <svg viewBox="0 0 500 500" version="1.1" >
                         <path
@@ -69,7 +70,8 @@ function Footer() {
                       className="link"
                       data-social="pinterest"
                       aria-label="Instagram"
-                      href="https://www.instagram.com/"
+                      href="https://www.instagram.com/polish_eyewear?igsh=MWhqMms0amlqOThsMg=="
+                      target="_blank"
                     >
                       <svg viewBox="0 0 450 450" version="1.1">
                         <path
