@@ -375,7 +375,7 @@
     /* Stack items vertically */
     align-items: flex-start;
     /* Align items to the start */
-    padding: 0px;
+    padding: 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
