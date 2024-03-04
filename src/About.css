@@ -91,3 +91,12 @@ body {
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+    }
+    .about-section h1 {
+        margin-top: 0;
+    }
+}

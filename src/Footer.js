@@ -89,17 +89,17 @@ function Footer() {
             
             {/* Google Play badge */}
             <div className="footer-column">
-              <h2>Get our app :</h2>
+              <h2>Get our app on:</h2>
             <div className="google-play-badge">
               <a href="https://play.google.com/store">
                 <img src={GooglePlayBadge} alt="Google Play Badge" />
               </a>
             </div>
-          </div>
+            </div>
           </div>
           <hr></hr>
           <div className="copyright-text">
-            ©COPYRIGHT 2024 | POLISH EYEWEAR POWERED BY{" "}
+            ©COPYRIGHT 2024 | Polish Eyewear Powered By{" "}
               <a
                 href="https://incronix.com/"
                 className="highlight-link"

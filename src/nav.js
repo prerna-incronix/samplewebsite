@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "./assets/jpgs/Animations2.mp4";
+import logo from "./assets/pngs/logo.png";
 import "./assets/styles.css";
 
 const Navbar = () => {
@@ -24,10 +24,11 @@ const Navbar = () => {
       {/* Left section for company logo */}
       <div className="navbar__logo">
         <NavLink to="/home">
-          <ul>
+          {/* <ul>
             <li><span id="polishText">POLISH</span></li>
             <li><span id="eyewearText">Eyewear</span></li>
-          </ul>
+          </ul> */}
+          <img src={logo} alt = "Polish Eyewear" />
         </NavLink>
       </div>
 
