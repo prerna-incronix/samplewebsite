@@ -88,11 +88,14 @@ function Footer() {
             </div>
             
             {/* Google Play badge */}
+            <div className="footer-column">
+              <h2>Get our app :</h2>
             <div className="google-play-badge">
               <a href="https://play.google.com/store">
                 <img src={GooglePlayBadge} alt="Google Play Badge" />
               </a>
             </div>
+          </div>
           </div>
           <hr></hr>
           <div className="copyright-text">
