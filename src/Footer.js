@@ -114,7 +114,7 @@ function Footer() {
           </div>
           <hr></hr>
           <div className="copyright-text">
-            ©COPYRIGHT 2024 | POLISH EYEWEAR POWERED BY{" "}
+            ©COPYRIGHT 2024 | Polish Eyewear Powered By{" "}
               <a
                 href="https://incronix.com/"
                 className="highlight-link"

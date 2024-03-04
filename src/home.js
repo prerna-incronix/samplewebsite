@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import logo from './assets/pngs/logo.png'
 import HeroSection from "./hero";
 import About from "./About";
 import Category from "./category";
@@ -35,10 +36,11 @@ const Home = () => {
   return (
     <div>
       <div className="top-middle">
-        <ul>
+        {/* <ul>
           <li><span id="polishText">POLISH</span></li>
           <li><span id="eyewearText">Eyewear</span></li>
-        </ul>
+        </ul> */}
+        <img src={logo} alt = "Polish Eyewear" className="navlogo"/>
       </div>
       <div className="hero-section fade-in-left">
         <HeroSection />
