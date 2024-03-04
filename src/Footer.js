@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import GooglePlayBadge from "./assets/pngs/google-play-badge.png";
 import IncronixFooterLogo from "./assets/pngs/incronix.png";
 import { Link } from "react-router-dom";
 import IncronixLogo from "./assets/pngs/incronix.png";
+import { initializeApp } from "firebase/app"; // Import Firebase initialization method
+import { getFirestore, doc, getDoc } from "firebase/firestore"; // Import Firestore methods
+import firebaseConfig from "./firebaseConfig"; // Import Firebase configuration
 
 function Footer() {
+  const [socialLinks, setSocialLinks] = useState({});
+
+  useEffect(() => {
+    // Initialize Firebase app
+    const app = initializeApp(firebaseConfig);
+    // Get Firestore database instance
+    const db = getFirestore(app);
+
+    // Fetch social links from Firebase
+    const fetchSocialLinks = async () => {
+      const socialLinksRef = doc(db, "links", "social");
+      const docSnap = await getDoc(socialLinksRef);
+      if (docSnap.exists()) {
+        setSocialLinks(docSnap.data());
+      }
+    };
+
+    fetchSocialLinks();
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -16,12 +39,7 @@ function Footer() {
   return (
     <>
       <footer id="footer">
-        {/* <div className="polish-logo">
-            <img src={PolishLogo} alt="Polish Logo" />
-          </div> */}
-
         <div className="container">
-          {/* Polish logo */}
           <div className="footer-content">
             <div className="footer-column">
               <h2>Useful Links</h2>
@@ -47,30 +65,29 @@ function Footer() {
                   <li className="icon-content">
                     <a
                       className="link"
-                      data-social="telegram"
+                      data-social="facebook"
                       aria-label="Facebook"
-                      href="https://www.facebook.com/profile.php?id=61553292098936&mibextid=YMEMSu"
+                      href={socialLinks.facebook || ""}
                       target="_blank"
                     >
-                      <svg viewBox="0 0 500 500" version="1.1" >
+                      <svg viewBox="0 0 500 500" version="1.1">
                         <path
-                          fill="currentColor" 
+                          fill="currentColor"
                           d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.8 90.7 226.4 209.3 245V327.7h-63V256h63v-54.6c0-62.2 37-96.5 93.7-96.5 27.1 0 55.5 4.8 55.5 4.8v61h-31.3c-30.8 0-40.4 19.1-40.4 38.7V256h68.8l-11 71.7h-57.8V501C413.3 482.4 504 379.8 504 256z"
                         ></path>
                       </svg>
                     </a>
                     <div className="tooltip">Facebook</div>
                   </li>
-                  {/* Repeat the same structure for other social media icons */}
                 </ul>
 
                 <ul className="example-1">
                   <li className="icon-content">
                     <a
                       className="link"
-                      data-social="pinterest"
+                      data-social="instagram"
                       aria-label="Instagram"
-                      href="https://www.instagram.com/polish_eyewear?igsh=MWhqMms0amlqOThsMg=="
+                      href={socialLinks.instagram || ""}
                       target="_blank"
                     >
                       <svg viewBox="0 0 450 450" version="1.1">
@@ -82,34 +99,29 @@ function Footer() {
                     </a>
                     <div className="tooltip">Instagram</div>
                   </li>
-                  {/* Repeat the same structure for other social media icons */}
                 </ul>
-
-                
               </div>
             </div>
-            
-            {/* Google Play badge */}
+
             <div className="footer-column">
               <h2>Get our app on:</h2>
-            <div className="google-play-badge">
-              <a href="https://play.google.com/store">
-                <img src={GooglePlayBadge} alt="Google Play Badge" />
-              </a>
-            </div>
+              <div className="google-play-badge">
+                <a href="https://play.google.com/store">
+                  <img src={GooglePlayBadge} alt="Google Play Badge" />
+                </a>
+              </div>
             </div>
           </div>
           <hr></hr>
           <div className="copyright-text">
             ©COPYRIGHT 2024 | Polish Eyewear | Designed and Developed by{" "}
-              <a
-                href="https://incronix.com/"
-                className="highlight-link"
-                target="_blank"
-              >
-                <img src={IncronixFooterLogo} alt = "Incronix" className="powered-by-logo"/>
-              </a>
-            
+            <a
+              href="https://incronix.com/"
+              className="highlight-link"
+              target="_blank"
+            >
+              <img src={IncronixFooterLogo} alt="Incronix" className="powered-by-logo" />
+            </a>
           </div>
         </div>
       </footer>
